@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="complaint_type">
+        <item>Select Complaint Type</item>
+        <item>Faulty Product</item>
+        <item>Product Out Of Stock</item>
+        <item>Damaged goods</item>
+        <item>Scheme Related</item>
+        <item>Payment Related</item>
+        <item>Others</item>
+
+    </string-array>
+    <string-array name="profession_type">
+        <item>Select your Profession</item>
+        <item>RETAILER</item>
+        <item>DISTRIBUTOR</item>
+        <item>Store Promoter / Sales Executive</item>
+        <item>Company Professional</item>
+    </string-array>
+    <string-array name="industry_type">
+        <item>Select Industry Type</item>
+        <item>Mobile</item>
+        <item>Telecom Recharge</item>
+        <item>Others</item>
+    </string-array>
+
+
+    <string-array name="record_status">
+        <item>Pending by Distributor</item>
+        <item>Settled by Distributor</item>
+    </string-array>
+
+    <string-array name="Subscriptionplans">
+        <item>Monthly Subscription "+"\u20B9"+"50/-</item>
+        <item>6 Month Subscription"+"\u20B9"+"300/- </item>
+        <item>Yearly Subscription "+"\u20B9"+"500/-</item>
+
+    </string-array>
+
+
+    <string-array name="State_array">
+        <item>Select State</item>
+        <item>Karnataka</item>
+        <item>Maharashtra</item>
+        <item>Gujarat</item>
+        <item>Andra Pradesh</item>
+        <item>Madhya Pradesh</item>
+        <item>Delhi</item>
+    </string-array>
+
+    <string-array name="City_array">
+        <item>Select City</item>
+        <item>Bengaluru</item>
+        <item>Mumbai</item>
+        <item>Ahemadabad</item>
+        <item>Vizag</item>
+        <item>Bhopal</item>
+        <item>Noida</item>
+        <item>Guledagudda</item>
+        <item>Solapur</item>
+        <item>Gwalior</item>
+        <item>New Delhi</item>
+        <item>Mangaluru</item>
+        <item>Pune</item>
+    </string-array>
+
+
+
+    <string-array name="productlist_filter">
+        <item>All</item>
+        <item>Settled</item>
+        <item>Unsettled</item>
+    </string-array>
+
+    <string-array name="serviceCentreList">
+        <item>APPLE</item>
+        <item>SAMSUNG</item>
+        <item>GIONEE</item>
+        <item>LAVA</item>
+        <item>HTC</item>
+        <item>ASUS</item>
+        <item>VIVO</item>
+        <item>ITEL</item>
+        <item>ZIOX</item>
+        <item>OPPO</item>
+        <item>JIO LYF</item>
+        <item>ZEN</item>
+        <item>INTEX</item>
+        <item>CELKON</item>
+        <item>XIAOMI</item>
+        <item>TECNO</item>
+        <item>LENOVO</item>
+        <item>ZOPO</item>
+        <item>M-TECH</item>
+        <item>EDGE MOBILE</item>
+        <item>GOOGLE PIXEL</item>
+        <item>MIROMAX FEATURE PHONES</item>
+        <item>PANASONIC</item>
+        <item>ACER</item>
+        <item>INFOCUS</item>
+        <item>HUAWEI</item>
+        <item>LG</item>
+        <item>XCESS MOBILE</item>
+        <item>NOKIA</item>
+        <item>MOTOROLA</item>
+        <item>LEPHONE</item>
+        <item>YU</item>
+        <item>VIDEOCON</item>
+        <item>SONY</item>
+        <item>IBALL</item>
+        <item>KARBONN</item>
+        <item>COMIO</item>
+        <item>EXMART</item>
+        <item>LEMON</item>
+        <item>MAFE</item>
+        <item>MOZOMAXX</item>
+        <item>SAMSUNG ACCESSORIES</item>
+        <item>SPICE</item>
+        <item>XILLION</item>
+    </string-array>
+
+    <string-array name="brandpromotersList">
+        <item>APPLE</item>
+        <item>SAMSUNG</item>
+        <item>GIONEE</item>
+        <item>LAVA</item>
+        <item>HTC</item>
+        <item>ASUS</item>
+        <item>VIVO</item>
+        <item>ITEL</item>
+        <item>ZIOX</item>
+        <item>OPPO</item>
+        <item>JIO LYF</item>
+        <item>ZEN</item>
+        <item>INTEX</item>
+        <item>CELKON</item>
+        <item>XIAOMI</item>
+        <item>TECNO</item>
+        <item>LENOVO</item>
+        <item>ZOPO</item>
+        <item>M-TECH</item>
+        <item>EDGE MOBILE</item>
+        <item>GOOGLE PIXEL</item>
+        <item>MIROMAX FEATURE PHONES</item>
+        <item>PANASONIC</item>
+        <item>ACER</item>
+        <item>INFOCUS</item>
+        <item>HUAWEI</item>
+        <item>LG</item>
+        <item>XCESS MOBILE</item>
+        <item>NOKIA</item>
+        <item>MOTOROLA</item>
+        <item>LEPHONE</item>
+        <item>YU</item>
+        <item>VIDEOCON</item>
+        <item>SONY</item>
+        <item>IBALL</item>
+        <item>KARBONN</item>
+        <item>COMIO</item>
+        <item>EXMART</item>
+        <item>LEMON</item>
+        <item>MAFE</item>
+        <item>MOZOMAXX</item>
+        <item>SAMSUNG ACCESSORIES</item>
+        <item>SPICE</item>
+        <item>XILLION</item>
+    </string-array>
+
+    <string-array name="manufacturerList">
+        <item>APPLE</item>
+        <item>SAMSUNG</item>
+        <item>GIONEE</item>
+        <item>LAVA</item>
+        <item>HTC</item>
+        <item>ASUS</item>
+        <item>VIVO</item>
+        <item>ITEL</item>
+        <item>ZIOX</item>
+        <item>OPPO</item>
+        <item>JIO LYF</item>
+        <item>ZEN</item>
+        <item>INTEX</item>
+        <item>CELKON</item>
+        <item>XIAOMI</item>
+        <item>TECNO</item>
+        <item>LENOVO</item>
+        <item>ZOPO</item>
+        <item>M-TECH</item>
+        <item>EDGE MOBILE</item>
+        <item>GOOGLE PIXEL</item>
+        <item>MIROMAX FEATURE PHONES</item>
+        <item>PANASONIC</item>
+        <item>ACER</item>
+        <item>INFOCUS</item>
+        <item>HUAWEI</item>
+        <item>LG</item>
+        <item>XCESS MOBILE</item>
+        <item>NOKIA</item>
+        <item>MOTOROLA</item>
+        <item>LEPHONE</item>
+        <item>YU</item>
+        <item>VIDEOCON</item>
+        <item>SONY</item>
+        <item>IBALL</item>
+        <item>KARBONN</item>
+        <item>COMIO</item>
+        <item>EXMART</item>
+        <item>LEMON</item>
+        <item>MAFE</item>
+        <item>MOZOMAXX</item>
+        <item>SAMSUNG ACCESSORIES</item>
+        <item>SPICE</item>
+        <item>XILLION</item>
+    </string-array>
+
+    <string-array name="companyprofessionalList">
+        <item>APPLE</item>
+        <item>SAMSUNG</item>
+        <item>GIONEE</item>
+        <item>LAVA</item>
+        <item>HTC</item>
+        <item>ASUS</item>
+        <item>VIVO</item>
+        <item>ITEL</item>
+        <item>ZIOX</item>
+        <item>OPPO</item>
+        <item>JIO LYF</item>
+        <item>ZEN</item>
+        <item>INTEX</item>
+        <item>CELKON</item>
+        <item>XIAOMI</item>
+        <item>TECNO</item>
+        <item>LENOVO</item>
+        <item>ZOPO</item>
+        <item>M-TECH</item>
+        <item>EDGE MOBILE</item>
+        <item>GOOGLE PIXEL</item>
+        <item>MIROMAX FEATURE PHONES</item>
+        <item>PANASONIC</item>
+        <item>ACER</item>
+        <item>INFOCUS</item>
+        <item>HUAWEI</item>
+        <item>LG</item>
+        <item>XCESS MOBILE</item>
+        <item>NOKIA</item>
+        <item>MOTOROLA</item>
+        <item>LEPHONE</item>
+        <item>YU</item>
+        <item>VIDEOCON</item>
+        <item>SONY</item>
+        <item>IBALL</item>
+        <item>KARBONN</item>
+        <item>COMIO</item>
+        <item>EXMART</item>
+        <item>LEMON</item>
+        <item>MAFE</item>
+        <item>MOZOMAXX</item>
+        <item>SAMSUNG ACCESSORIES</item>
+        <item>SPICE</item>
+        <item>XILLION</item>
+    </string-array>
+
+</resources>

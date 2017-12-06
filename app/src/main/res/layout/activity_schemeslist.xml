@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.Schemes.SchemeListActivity">
+
+
+    <!-- our toolbar -->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/tab_schemes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="@drawable/tab_selector"
+            android:button="@null"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@drawable/tab_text_selector"
+            android:checked="true"
+            android:text="Schemes" />
+
+        <RadioButton
+            android:id="@+id/tab_myschemes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="@drawable/tab_text_selector"
+            android:textSize="18sp"
+            android:background="@drawable/tab_selector"
+            android:button="@null"
+            android:text="My Schemes" />
+
+    </RadioGroup>
+
+
+    <!-- our tablayout to display tabs  -->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <TextView
+        android:id="@+id/nodata_view"
+        style="@style/normalTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:text="No Schemes"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="@dimen/mediumtextSize"
+        android:visibility="gone" />
+
+    <!-- View pager to swipe views -->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7" />
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView_scmelist"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="4dp"
+        android:layout_weight="1"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-1640690939729824/1329319399"></com.google.android.gms.ads.AdView>
+
+</LinearLayout>

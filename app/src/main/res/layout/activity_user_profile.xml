@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="org.app.mydukan.activities.UserProfile">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="?attr/colorPrimary"
+            android:orientation="horizontal"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <ImageView
+                android:id="@+id/back_button_1"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="8dp"
+                android:foregroundGravity="center_vertical"
+                android:src="@drawable/ic_action_arrowleft"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:text="My Profile"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/largetextSize"
+                android:foregroundGravity="center_vertical"
+                android:layout_margin="8dp"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="35dp"
+        android:paddingRight="35dp"
+        android:paddingLeft="35dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/user_profile_pic"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:foregroundGravity="center_vertical"
+                android:src="@drawable/ic_action_profile"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/user_Profile_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="User Name"
+                android:maxLines="1"
+                android:layout_toRightOf="@id/user_profile_pic"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/largetextSize"
+                android:layout_marginTop="5dp"
+                android:foregroundGravity="center_vertical"
+                android:layout_marginLeft="8dp"/>
+
+            <TextView
+                android:id="@+id/user_Email_Id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="User@MyDukan.com"
+                android:layout_toRightOf="@id/user_profile_pic"
+                android:layout_below="@id/user_Profile_Name"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/mediumtextSize_1"
+                android:layout_marginLeft="8dp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Phone Number"
+                android:textColor="#4285F4"
+                android:textSize="@dimen/mediumtextSize_1"
+                />
+            <TextView
+                android:id="@+id/edit_PhoneNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Edit"
+                android:gravity="right"
+                android:textColor="#4285F4"
+                android:textSize="@dimen/mediumtextSize_1" />
+
+    </LinearLayout>
+
+        <EditText
+            android:id="@+id/user_Phone_Number"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@color/tw__transparent"
+            android:inputType="number"
+            android:enabled="false"
+            android:paddingTop="6dp"
+            android:paddingBottom="2dp"
+            android:maxLength="13"
+            android:hint="Your Number"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/mediumtextSize"
+            android:textColorHint="#ababab"
+            />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="4px"
+            android:background="@color/cardview_green"
+            android:layout_marginBottom="5dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Your Location"
+                android:textColor="#4285F4"
+                android:textSize="@dimen/mediumtextSize_1"
+                android:foregroundGravity="center_vertical"
+                />
+
+            <TextView
+                android:id="@+id/edit_Address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Edit"
+                android:gravity="right"
+                android:textColor="#4285F4"
+                android:textSize="@dimen/mediumtextSize_1" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/user_Profile_Location"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="2dp"
+            android:background="@android:color/transparent"
+            android:gravity="top"
+            android:maxLines="3"
+            android:enabled="false"
+            android:hint="Full Address"
+            android:paddingTop="4dp"
+            android:paddingBottom="2dp"
+            android:visibility="visible"
+            android:textColor="@color/text_color"
+            android:textColorHint="#ababab"
+            android:textSize="@dimen/mediumtextSize"
+            />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="4px"
+            android:background="@color/cardview_green"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <EditText
+                android:id="@+id/user_Profile_Pincode"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:maxLines="1"
+                android:gravity="center_vertical"
+                android:hint="Pincode"
+                android:paddingTop="10dp"
+                android:paddingBottom="2dp"
+                android:enabled="false"
+                android:singleLine="true"
+                android:textColor="@color/text_color"
+                android:textColorHint="#ababab"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="4px"
+                android:layout_below="@id/user_Profile_Pincode"
+                android:background="@color/cardview_green"/>
+
+            <EditText
+                android:id="@+id/user_Profile_State"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:maxLines="1"
+                android:gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:hint="State"
+                android:paddingTop="10dp"
+                android:paddingBottom="2dp"
+                android:enabled="false"
+                android:singleLine="true"
+                android:textColor="@color/text_color"
+                android:textColorHint="#ababab"
+                android:textSize="18sp"/>
+
+            <View
+                android:layout_width="150dp"
+                android:layout_height="4px"
+                android:layout_below="@id/user_Profile_State"
+                android:layout_alignParentRight="true"
+                android:background="@color/cardview_green" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/user_Profile_Next"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="60dp"
+            android:background="#4285F4"
+            android:padding="3dp"
+            android:text="@string/next_btn"
+            android:textColor="@color/white"
+            android:textSize="@dimen/mediumtextSize_1"
+             />
+
+
+    </LinearLayout>
+
+</LinearLayout>

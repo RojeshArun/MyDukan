@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/cardview_horizontal_margin">
+
+        <RelativeLayout
+            android:id="@+id/layout_vProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/cardview_horizontal_margin">
+
+            <ImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/iv_avatar"
+                android:layout_toRightOf="@+id/iv_avatar"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RelativeOverlap" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_name"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@+id/iv_avatar"
+                android:layout_toRightOf="@+id/iv_avatar"
+                android:text=""
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+            <ImageView
+                android:id="@+id/iv_Delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/ic_delete_forever_black_24dp"
+                tools:ignore="ContentDescription" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:linksClickable="true"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="6dp"
+            android:text=""
+            android:textAlignment="textStart"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_contentLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:linksClickable="true"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="6dp"
+            android:text=""
+            android:textAlignment="textStart"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_feed"
+            android:layout_width="fill_parent"
+            android:layout_height="250dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_holder"
+            tools:ignore="ContentDescription,ObsoleteLayoutParam" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/cardview_horizontal_margin">
+
+            <ImageView
+                android:id="@+id/iv_like"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_margin="6dp"
+                android:src="@drawable/ic_thumb_up_grey600_24dp"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tv_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/iv_like"
+                android:layout_toRightOf="@+id/iv_like"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:ignore="RelativeOverlap" />
+
+            <Button
+                android:id="@+id/btn_follow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="Follow"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textStyle="bold"
+                android:visibility="gone"
+                tools:ignore="HardcodedText" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

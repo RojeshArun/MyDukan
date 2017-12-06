@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/product_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.ProductListActivity">
+    <com.moengage.widgets.NudgeView
+        android:id="@+id/nudge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.moengage.widgets.NudgeView>
+    <RelativeLayout
+        android:id="@+id/layout_enable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+        <!-- our toolbar -->
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <!-- our tablayout to display tabs  -->
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+        <TextView
+            android:id="@+id/nodata_view"
+            style="@style/normalTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottomToolbar"
+            android:layout_below="@+id/tabLayout"
+            android:gravity="center"
+            android:text="There is no model in this Price Range, Swipe to check other categories"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/mediumtextSize"
+            android:visibility="gone" />
+
+        <!-- View pager to swipe views -->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/bottomToolbar"
+            android:layout_below="@+id/tabLayout"
+            />
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/bottomToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentBottom="true"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+            <include layout="@layout/toolbar_productlist" />
+
+        </android.support.v7.widget.Toolbar>
+    </RelativeLayout>
+
+
+</RelativeLayout>

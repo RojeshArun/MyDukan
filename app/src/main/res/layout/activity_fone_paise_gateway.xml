@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="org.app.mydukan.activities.PaytmGatewayActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/imageBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_action_arrowleft"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/imageBack"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/imageBack"
+            android:layout_toRightOf="@+id/imageBack"
+            android:src="@mipmap/ic_launcher"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/imageView4"
+            android:layout_toRightOf="@+id/imageView4"
+            android:text="MyDukan"
+            android:textColor="@color/white"
+            android:textSize="@dimen/largetextSize"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ProgressBar
+        android:id="@+id/progerssBar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            tools:ignore="ScrollViewSize">
+
+            <LinearLayout
+                android:id="@+id/linearLayout8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:fontFamily="serif"
+                    android:padding="5dp"
+                    android:text="Choose Subscription Plan"
+                    android:textColor="@color/authui_colorAccent"
+                    android:textSize="@dimen/largetextSize"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <RadioGroup
+                    android:id="@+id/radiogp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_PayNow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/authui_colorAccent"
+                android:clickable="false"
+                android:fontFamily="serif"
+                android:text="Pay now"
+                android:textColor="@color/white"
+                android:textSize="@dimen/largetextSize"
+                tools:ignore="HardcodedText" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:orientation="vertical"
+                android:padding="@dimen/button_margin">
+
+                <TextView
+                    android:id="@+id/tv_Selected_Plan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/largetextSize"
+                    android:fontFamily="serif"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:textColor="@color/black_overlay"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_promocode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout8"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="58dp"
+                android:layout_marginRight="58dp"
+                android:layout_marginTop="6dp"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:ignore="ObsoleteLayoutParam">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="If you have a Promo Code from MyDukan, Click here or Ignore."
+                    android:textAlignment="center"
+                    android:textColor="@color/black_overlay"
+                    android:textSize="@dimen/smalltextSize"
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/tv_PromoCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/bg_cardview"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:gravity="center"
+                    android:inputType="textCapCharacters"
+                    android:maxLength="7"
+                    android:padding="8sp"
+                    android:textColor="@color/cardview_green"
+                    android:textSize="@dimen/mediumtextSize"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btn_promoCode"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="16dp"
+                    android:background="@color/authui_colorAccent"
+                    android:clickable="false"
+                    android:fontFamily="serif"
+                    android:text="Click Here"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/microtextSize"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    </RelativeLayout>
+</LinearLayout>

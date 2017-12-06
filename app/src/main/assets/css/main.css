@@ -1,0 +1,128 @@
+@CHARSET "ISO-8859-1";
+
+#logo{
+	align:center;
+	width:35px;
+	height:35px;
+	margin-left:12px;
+	margin-top:px;
+}
+body{
+	background-color:#FFFFFF;
+}
+
+h1{ 
+margin-top:35px;
+	font-family: fantasy;
+	text-align: center;
+	font-variant: small-caps;
+	color: #b30059;
+}
+
+a{
+	color: #E91E63;
+} 
+
+
+/* for desk top or laptop */
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+}
+/* Zebra striping */
+tr:nth-of-type(even) { 
+  background: #c5cae9; 
+}
+tr:nth-of-type(odd){
+	background:#FFFFFF; 
+}
+thead { 
+  background: #fff9c4; 
+  font-weight: bold; 
+}
+td{ 
+  padding: 6px; 
+  border: 1px solid #ccc; 
+  text-align: left; 
+  color: #ff6f00;
+}
+
+
+   /* 
+	Max width before this PARTICULAR table gets nasty
+	This query will take effect for any screen smaller than 760px
+	and also iPads specifically.
+	*/
+	@media 
+	only screen and (max-width: 320px),
+	(min-device-width: 320px) and (max-device-width: 1024px)  {
+	
+		/* Force table to not be like tables anymore */
+		table, thead, tbody, th, td, tr { 
+			display: block; 
+		}
+		th{
+		color: #C51162;
+		}
+		/* Hide table headers (but not display: none;, for accessibility) */
+		thead tr { 
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+		}
+		
+		tr { border: 1px solid #ccc; }
+		
+		td { 
+			/* Behave  like a "row" */
+			border: none;
+			border-bottom: 1px solid #eee; 
+			position: relative;
+			padding-left: 30%; 
+			color: #C51162;
+		}
+		
+		td:before { 
+			/* Now like a table header */
+			position: absolute;
+			/* Top/left values mimic padding */
+			top: 6px;
+			left: 6px;
+			width: 45%; 
+			padding-right: 10px; 
+			white-space: nowrap;
+		}
+		
+		/*
+		Label the data
+		*/
+		td:nth-of-type(1):before { content: attr(data-label)}
+		td:nth-of-type(2):before { content: attr(data-label)}
+		td:nth-of-type(3):before { content: attr(data-label)}
+		td:nth-of-type(4):before { content: attr(data-label) }
+		td:nth-of-type(5):before { content: attr(data-label) }
+		td{
+			text-align:top;
+		}
+	}
+	
+	/* Smartphones (portrait and landscape) ----------- */
+	@media only screen
+	and (min-device-width : 320px)
+	and (max-device-width : 480px) {
+		body { 
+			padding: 0; 
+			margin: 0; 
+			width: 320px; 
+			background-image:url("image/mydukan.png");
+			background-repeat:repeat;
+		}
+	
+	/* iPads (portrait and landscape) ----------- */
+	@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+		body { 
+			width: 495px; 
+			background-image:url("image/mydukan.png");
+			background-repeat:repeat;
+		}
+	}

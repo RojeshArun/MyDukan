@@ -1,0 +1,395 @@
+ [
+   {
+     "servicecenter_NAME":"CELL WORLD",
+     "servicecenter_CITY": "Abohar",
+     "servicecenter_ADDRESS":"Sathiya Saran Road",
+     "servicecenter_PINCODE":"152116",
+     "servicecenter_STATE":"Punjab",
+     "servicecenter_PHONENUMBER":"01634-225855",
+     "servicecenter_BRAND":"Samsung"
+   },
+
+   {
+     "servicecenter_NAME":"S S CELL POINT",
+     "servicecenter_CITY": "Abohar",
+     "servicecenter_ADDRESS":" Shop No 7,8 & 9, Ganesh Theater Complex, 1st  Floor, Cinima Road",
+     "servicecenter_PINCODE":"504001",
+     "servicecenter_STATE":"Andhra Pradesh",
+     "servicecenter_PHONENUMBER":"9059726534",
+     "servicecenter_BRAND":"Samsung"
+   },
+
+   {
+     "servicecenter_NAME":"KRIPA COMMUNICATIONS",
+     "servicecenter_CITY": "Adimaly",
+     "servicecenter_ADDRESS":"Ground Floor, Landarc Shopping Complex, Centeral  Junction",
+     "servicecenter_PINCODE":"685561",
+     "servicecenter_STATE":"Kerala",
+     "servicecenter_PHONENUMBER":"04864-22552",
+     "servicecenter_BRAND":"Samsung"
+   },
+
+   {
+     "servicecenter_NAME":"S B ELECTRONICS",
+     "servicecenter_ADDRESS":"91, H G Basak Road, Melarmath",
+     "servicecenter_CITY": "Agartala",
+     "servicecenter_STATE":"Tripura",
+     "servicecenter_PINCODE":"799001",
+     "servicecenter_PHONENUMBER":"0381-2380683",
+     "servicecenter_BRAND":"Samsung"
+   },
+
+   {
+     "servicecenter_NAME":"ELECTRONIC PEOPLE",
+     "servicecenter_ADDRESS":"34, Lawyers Colony, New Subhash Nagar",
+     "servicecenter_CITY": "Agra",
+     "servicecenter_STATE":"Uttar Pradesh",
+     "servicecenter_PINCODE":"282002",
+     "servicecenter_PHONENUMBER":"0562-4058808",
+     "servicecenter_BRAND":"Samsung"
+   },
+
+   {
+     "servicecenter_NAME":"SHREE SHYAM ENTREPRISE",
+     "servicecenter_ADDRESS":"G-2, Nidhi House, Near Nidhi Co-operative Bank,  CTM, NH 8",
+     "servicecenter_CITY": "Ahmedabad",
+     "servicecenter_STATE":"Gujarat",
+     "servicecenter_PINCODE":" 382415",
+     "servicecenter_PHONENUMBER":"9737216938",
+     "servicecenter_BRAND":"Samsung"
+   },
+
+   {
+     "servicecenter_NAME":"SHRI SAMARTH COMPUTERS & MOBILE",
+     "servicecenter_ADDRESS":"1st Floor, P N Gadgil Jwellers Building, Sarjepura",
+     "servicecenter_CITY": "Ahmednagar",
+     "servicecenter_STATE":"Maharashtra",
+     "servicecenter_PINCODE":"414001",
+     "servicecenter_PHONENUMBER":"9270390652",
+     "servicecenter_BRAND":"Samsung"
+   },
+
+   {
+     "servicecenter_NAME":"SHRI KRISHNA MOBILE SHOPEE",
+     "servicecenter_ADDRESS":"1st Floor, Prakash Reddy Complex, Thoadga Road Ahmedpur",
+     "servicecenter_CITY": "Ahmedpur",
+     "servicecenter_STATE":"Maharashtra",
+     "servicecenter_PINCODE":"413515",
+     "servicecenter_PHONENUMBER":"9923234777",
+     "servicecenter_BRAND":"Samsung"
+   },
+
+   {
+     "servicecenter_NAME":"LALDAILOVA PACHUAU AND SONS",
+     "servicecenter_ADDRESS":"Near Zodin Hyundai Show Room, Zarkawt",
+     "servicecenter_CITY": "Aizawl",
+     "servicecenter_STATE":"Mizoram",
+     "servicecenter_PINCODE":"796001",
+     "servicecenter_PHONENUMBER":"0389-230023",
+     "servicecenter_BRAND":"Samsung"
+   },
+
+   {
+     "servicecenter_NAME":"MOBILE CLINIC",
+     "servicecenter_ADDRESS":"F-7, First Floor, Amar Plaza, Opposite Daulat Bagh",
+     "servicecenter_CITY": "Ajmer",
+     "servicecenter_STATE":"Rajasthan",
+     "servicecenter_PINCODE":"305001",
+     "servicecenter_PHONENUMBER":"982908711",
+     "servicecenter_BRAND":"Samsung"
+   },
+
+   {
+     "servicecenter_NAME":"H N TELECOM",
+     "servicecenter_ADDRESS":"Ward No-6, Nehru Nagar Over Kiridge",
+     "servicecenter_CITY": "Akbarpur",
+     "servicecenter_STATE":"Uttar Pradesh",
+     "servicecenter_PINCODE":"209101",
+     "servicecenter_PHONENUMBER":"9956220733",
+     "servicecenter_BRAND":"Samsung"
+   },
+
+   {
+     "servicecenter_NAME":"RAZA COMMUNICAITON",
+     "servicecenter_ADDRESS":"Sadubhau Chowk, Shankarnager Road",
+     "servicecenter_CITY": "Akluj",
+     "servicecenter_STATE":"Maharashtra",
+     "servicecenter_PINCODE":" 425105",
+     "servicecenter_PHONENUMBER":"02185-222686",
+     "servicecenter_BRAND":"Samsung"
+   },
+
+   {
+     "servicecenter_NAME":"MOBILE TOUCH",
+     "servicecenter_ADDRESS":"2nd Floor, 13, Padiya Complex Tower Chowk, Station Road",
+     "servicecenter_CITY": "Akola",
+     "servicecenter_STATE":"Maharashtra",
+     "servicecenter_PINCODE":"444001",
+     "servicecenter_PHONENUMBER":"9823062462",
+     "servicecenter_BRAND":"Samsung"
+   },
+
+   {
+     "servicecenter_NAME":"N N ENTERPRISES",
+     "servicecenter_ADDRESS":"20, Vivekanand Marg, Hotel Surya",
+     "servicecenter_CITY": "Allahabad",
+     "servicecenter_STATE":"Uttar Pradesh",
+     "servicecenter_PINCODE":"211008",
+     "servicecenter_PHONENUMBER":"7309228888",
+     "servicecenter_BRAND":"Samsung"
+   },
+
+   {
+     "servicecenter_NAME":"KHULBE COMMUNICATION AND COMPUTER",
+     "servicecenter_ADDRESS":"1st Floor, Danpur Bhawan Mall Road",
+     "servicecenter_CITY": "Almora",
+     "servicecenter_STATE":"Uttarakhand",
+     "servicecenter_PINCODE":"263601",
+     "servicecenter_PHONENUMBER":"05962-232973",
+     "servicecenter_BRAND":"Samsung"
+   },
+
+   {
+     "servicecenter_NAME":"WIRELESS WORLD",
+     "servicecenter_ADDRESS":"1st Floor, XIX/151, Palupallath Building, Opposite Federal Bank Head Office, Bank Junction",
+     "servicecenter_CITY": "Aluva",
+     "servicecenter_STATE":"Kerala",
+     "servicecenter_PINCODE":"683101",
+     "servicecenter_PHONENUMBER":"9946827676",
+     "servicecenter_BRAND":"Samsung"
+   },
+
+   {
+     "servicecenter_NAME":"PAREEK ELECTRONICS",
+     "servicecenter_ADDRESS":"317, Scheme-2, Lajpat Nagar",
+     "servicecenter_CITY": "Alwar",
+     "servicecenter_STATE":"Rajasthan",
+     "servicecenter_PINCODE":"301001",
+     "servicecenter_PHONENUMBER":"-",
+     "servicecenter_BRAND":"Samsung"
+   },
+
+   {
+     "servicecenter_NAME":"DEVICOM",
+     "servicecenter_ADDRESS":"10-397, Teja Towers Near, SKBR College, Konakapalli",
+     "servicecenter_CITY": "Amalapuram",
+     "servicecenter_STATE":"Andhra Pradesh",
+     "servicecenter_PINCODE":"533201",
+     "servicecenter_PHONENUMBER":"8856233123",
+     "servicecenter_BRAND":"Samsung"
+   },
+
+   {
+     "servicecenter_NAME":"PADMAVATI MOBILE SHOPEE",
+     "servicecenter_ADDRESS":"Guruwar Peth, Opposite Wardhan Collection, Main Road",
+     "servicecenter_CITY": "Ambajogai",
+     "servicecenter_STATE":"Maharashtra",
+     "servicecenter_PINCODE":"431517",
+     "servicecenter_PHONENUMBER":"9766747444",
+     "servicecenter_BRAND":"Samsung"
+   },
+
+   {
+     "servicecenter_NAME":"KOHLI TELECOM",
+     "servicecenter_ADDRESS":"114/6/13, In Front of Parkat Shiv Mandir, Near Mulak Raj Cycle",
+     "servicecenter_CITY": "Ambala Cantt",
+     "servicecenter_STATE":"Haryana",
+     "servicecenter_PINCODE":"133001",
+     "servicecenter_PHONENUMBER":"0171-4000683",
+     "servicecenter_BRAND":"Samsung"
+   },
+
+   {
+     "servicecenter_NAME":"S K TECHNOLOGY",
+     "servicecenter_ADDRESS":"9C,1st Floor Ground Floor, Laxmi Sagar Appartment, Plot No 3-C, Shiv Mandir Road, Swami Samarth Chowk, Ambernath East",
+     "servicecenter_CITY": "Ambarnath",
+     "servicecenter_STATE":"Maharashtra",
+     "servicecenter_PINCODE":"421501",
+     "servicecenter_PHONENUMBER":"9323579598",
+     "servicecenter_BRAND":"Samsung"
+   },
+
+   {
+     "servicecenter_NAME":"SUBHASINI",
+     "servicecenter_ADDRESS":"Krishna Complex, Vijay Marg In Front of Central Bank",
+     "servicecenter_CITY": "Ambikapur",
+     "servicecenter_STATE":"Chhattisgarh",
+     "servicecenter_PINCODE":"497001",
+     "servicecenter_PHONENUMBER":"07774-203777",
+     "servicecenter_BRAND":"Samsung"
+   },
+
+   {
+     "servicecenter_NAME":"DIGITRONICS",
+     "servicecenter_ADDRESS":"1st Floor, Osmaniya Complex, Near Osmaniya Masjid, Bus Stand Road",
+     "servicecenter_CITY": "Amravati",
+     "servicecenter_STATE":"Maharashtra",
+     "servicecenter_PINCODE":"444601",
+     "servicecenter_PHONENUMBER":"0721-2578671",
+     "servicecenter_BRAND":"Samsung"
+   },
+
+   {
+     "servicecenter_NAME":"SUBHASINI",
+     "servicecenter_ADDRESS":"Krishna Complex, Vijay Marg In Front of Central Bank",
+     "servicecenter_CITY": "Ambikapur",
+     "servicecenter_STATE":"Chhattisgarh",
+     "servicecenter_PINCODE":"497001",
+     "servicecenter_PHONENUMBER":"07774-203777",
+     "servicecenter_BRAND":"Samsung"
+   },
+
+   {
+     "servicecenter_NAME":"ASHOK ELECTRONICS",
+     "servicecenter_ADDRESS":"Umiya Krupa, Opposite I T I, Near Railway Station Road",
+     "servicecenter_CITY": "Amreli",
+     "servicecenter_STATE":"Gujarat",
+     "servicecenter_PINCODE":"365601",
+     "servicecenter_PHONENUMBER":"02792-2264",
+     "servicecenter_BRAND":"Samsung"
+   },
+
+   {
+     "servicecenter_NAME":"SHIVANI ELECTRONICS",
+     "servicecenter_ADDRESS":"No 192, Gali No. 5, Bank Wali Gali Vijay Nagar, Opposite Auto Piston",
+     "servicecenter_CITY": "Amritsar",
+     "servicecenter_STATE":"Punjab",
+     "servicecenter_PINCODE":"143001",
+     "servicecenter_PHONENUMBER":"9592086906",
+     "servicecenter_BRAND":"Samsung"
+   },
+
+
+   {
+     "servicecenter_NAME":"P K COMMUNICATION",
+     "servicecenter_ADDRESS":"F-101, Veer Saffire, Beside C-9 Complex, Anand V V Nagar Road, Anand",
+     "servicecenter_CITY": "Anand",
+     "servicecenter_STATE":"Gujarat",
+     "servicecenter_PINCODE":"388001",
+     "servicecenter_PHONENUMBER":"9157022229",
+     "servicecenter_BRAND":"Samsung"
+   },
+
+   {
+     "servicecenter_NAME":"SURYA VAMSHI ELECTRONICS",
+     "servicecenter_ADDRESS":"15-523-28, 1st Floor, 1st Cross, Surya Nagar, Behind Pallavi Towers",
+     "servicecenter_CITY": "Ananthapur",
+     "servicecenter_STATE":"Andhra Pradesh",
+     "servicecenter_PINCODE":"515001",
+     "servicecenter_PHONENUMBER":"994994114",
+     "servicecenter_BRAND":"Samsung"
+   },
+
+   {
+     "servicecenter_NAME":"REDDY MOBILES",
+     "servicecenter_ADDRESS":"D No 14/275, Upstairs, Opposite DCMS Office Gate, DCMS Road, Kamala Nagar",
+     "servicecenter_CITY": "Ananthapuram",
+     "servicecenter_STATE":"Andhra Pradesh",
+     "servicecenter_PINCODE":"515001",
+     "servicecenter_PHONENUMBER":"8886113983",
+     "servicecenter_BRAND":"Samsung"
+   },
+
+   {
+     "servicecenter_NAME":" CREATIVE SOLUTIONS",
+     "servicecenter_ADDRESS":"Gandhimarg, Near Marrion Tower, Kalyani",
+     "servicecenter_CITY": "Angul",
+     "servicecenter_STATE":"Odisha",
+     "servicecenter_PINCODE":"759145",
+     "servicecenter_PHONENUMBER":"9861012045",
+     "servicecenter_BRAND":"Samsung"
+   },
+
+   {
+     "servicecenter_NAME":"MOBILE STORE",
+     "servicecenter_ADDRESS":"K P Road, Opposite Masjid, Near J K Bank ATM",
+     "servicecenter_CITY": "Anantnag",
+     "servicecenter_STATE":"Jammu & Kashmir",
+     "servicecenter_PINCODE":"192101",
+     "servicecenter_PHONENUMBER":"01932-222599",
+     "servicecenter_BRAND":"Samsung"
+   },
+
+   {
+     "servicecenter_NAME":"  SURBHI MOBILE WORLD",
+     "servicecenter_ADDRESS":"Maya Bhavan, Mission Road, Pakari",
+     "servicecenter_CITY": "Ara",
+     "servicecenter_STATE":"Bihar",
+     "servicecenter_PINCODE":"802301",
+     "servicecenter_PHONENUMBER":"943140588",
+     "servicecenter_BRAND":"Samsung"
+   },
+
+   {
+     "servicecenter_NAME":"THARUN COMMUNICATION",
+     "servicecenter_ADDRESS":"No 170, 1st Floor, Sholinghur Road, Opposite LIC",
+     "servicecenter_CITY": " Arakkonam",
+     "servicecenter_STATE":"Tamil Nadu",
+     "servicecenter_PINCODE":"631001",
+     "servicecenter_PHONENUMBER":" 984034443",
+     "servicecenter_BRAND":"Samsung"
+   },
+
+   {
+     "servicecenter_NAME":"EXCEL SERVICE",
+     "servicecenter_ADDRESS":"34/1, S B Gorai Road Opposite Ice Fact",
+     "servicecenter_CITY": " Asansol",
+     "servicecenter_STATE":"West Bengal",
+     "servicecenter_PINCODE":"713301",
+     "servicecenter_PHONENUMBER":"0341-221258",
+     "servicecenter_BRAND":"Samsung"
+   },
+
+   {
+     "servicecenter_NAME":"NEELAM HARDWARE",
+     "servicecenter_ADDRESS":"Esaghar Road Hospital Chauraha",
+     "servicecenter_CITY": "Ashok Nagar",
+     "servicecenter_STATE":"Madhya Pradesh",
+     "servicecenter_PINCODE":"473331",
+     "servicecenter_PHONENUMBER":"9893018176",
+     "servicecenter_BRAND":"Samsung"
+   },
+
+   {
+     "servicecenter_NAME":" ADITYA INFOCOM PRIVATE LIMITED",
+     "servicecenter_ADDRESS":"C3/117, Ashok Vihar, Phase-II",
+     "servicecenter_CITY": "Ashok Vihar",
+     "servicecenter_STATE":"New Delhi",
+     "servicecenter_PINCODE":"110052",
+     "servicecenter_PHONENUMBER":"011-43702697",
+     "servicecenter_BRAND":"Samsung"
+   },
+
+   {
+     "servicecenter_NAME":" TELE CLINIC",
+     "servicecenter_ADDRESS":" Laxmi Bazar Near Utkal Gramya Bank",
+     "servicecenter_CITY": "Asika",
+     "servicecenter_STATE":"Odisha",
+     "servicecenter_PINCODE":"76111",
+     "servicecenter_PHONENUMBER":" 9861165719",
+     "servicecenter_BRAND":"Samsung"
+   },
+
+   {
+     "servicecenter_NAME":" MOBILE CARE CENTER",
+     "servicecenter_ADDRESS":" Shop No 2, Kaithal Road, Assand",
+     "servicecenter_CITY": " Assandh",
+     "servicecenter_STATE":"Haryana",
+     "servicecenter_PINCODE":"132039",
+     "servicecenter_PHONENUMBER":"9416122237",
+     "servicecenter_BRAND":"Samsung"
+   },
+
+   {
+     "servicecenter_NAME":" SUN COMMUNICATION",
+     "servicecenter_ADDRESS":" No 334/A, 334/79/B, KAS Complex",
+     "servicecenter_CITY": "  Attur",
+     "servicecenter_STATE":"Tamil Nadu",
+     "servicecenter_PINCODE":"636102",
+     "servicecenter_PHONENUMBER":"986536525",
+     "servicecenter_BRAND":"Samsung"
+   }
+   }
+
+ ]
+

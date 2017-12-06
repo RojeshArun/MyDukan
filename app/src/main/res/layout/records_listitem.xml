@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recorditem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toLeftOf="@+id/deleteBtn">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/smalltextSize" />
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color"
+            android:layout_marginTop="@dimen/listrow_topmargin_multiline"
+            android:textSize="@dimen/smalltextSize" />
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color"
+            android:layout_marginTop="@dimen/listrow_topmargin_multiline"
+            android:textSize="@dimen/smalltextSize" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_marginLeft="@dimen/listrow_icontext_space"
+        android:layout_marginRight="@dimen/listrow_rightmargin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:text="@string/delete"
+        android:visibility="visible"/>
+
+</RelativeLayout>

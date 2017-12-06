@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_greyish">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager_introduction"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:fitsSystemWindows="true"
+        android:visibility="gone"
+        tools:listitem="@layout/pager_item" />
+
+    <RelativeLayout
+        android:id="@+id/viewPagerIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignBottom="@id/pager_introduction"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/viewPagerCountDots"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal" />
+
+        <ImageButton
+            android:id="@+id/btn_next"
+            android:layout_width="42dip"
+            android:layout_height="42dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/tw__transparent"
+            android:visibility="gone"
+            android:src="@drawable/ic_arrow_right" />
+
+        <ImageButton
+            android:id="@+id/btn_finish"
+            android:layout_width="42dip"
+            android:layout_height="42dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/tw__transparent"
+            android:contentDescription="Let's start"
+            android:src="@drawable/ic_arrow_left"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:minHeight="100dp"
+        android:minWidth="100dp"
+        android:scaleType="fitCenter"
+        android:visibility="visible"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:text="MyDukan"
+        android:visibility="visible"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/mediumtextSize"
+        android:textStyle="bold" />
+
+
+    <RelativeLayout
+        android:id="@+id/loginLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/pager_introduction"
+        >
+        <RelativeLayout
+            android:id="@+id/googleBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:padding="6dp"
+            >
+            <ImageView
+                android:id="@+id/googleicon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/google_signin_btn"
+                android:layout_marginTop="120dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Click Here "
+                android:paddingLeft="5dp"
+                android:layout_below="@id/googleicon"
+                android:textColor="@color/text_color"
+                android:gravity="center"
+                android:textSize="@dimen/smalltextSize"
+                />
+            <!-- <ImageView
+                 android:id="@+id/gmailIcon"
+                 android:layout_width="35dp"
+                 android:layout_height="35dp"
+                 android:scaleType="fitCenter"
+                 android:background="@drawable/rounded_edittext"
+                 android:src="@drawable/ic_google_plus_logo" />
+
+             <TextView
+                 android:id="@+id/googletextview"
+                 android:layout_width="wrap_content"
+                 android:layout_height="35dp"
+                 android:layout_toRightOf="@id/gmailIcon"
+                 android:gravity="center"
+                 android:layout_marginLeft="@dimen/listrow_icontext_space"
+                 android:layout_marginStart="@dimen/listrow_icontext_space"
+                 android:background="@color/googlered"
+                 android:text="@string/google_signin"
+                 android:padding="3dp"
+                 android:textColor="@color/white"
+                 android:textSize="16sp"
+                 android:textStyle="bold"
+                 />-->
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark" />
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:orientation="vertical">
+
+        <!-- Earnings -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/earningsID"
+                style="@style/normalTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_earnings"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLines="1"
+                android:nextFocusForward="@+id/dateID"
+                android:singleLine="true"
+                android:textColorHint="@color/colorTextSecondary"
+                android:textSize="@dimen/mediumtextSize" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Date -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/dateID"
+                style="@style/normalTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_date"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLines="1"
+                android:nextFocusForward="@+id/settledbyID"
+                android:singleLine="true"
+                android:textColorHint="@color/colorTextSecondary"
+                android:textSize="@dimen/mediumtextSize" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Switch
+            android:id="@+id/settledBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/listrow_topmargin_multiline"
+            android:layout_marginLeft="5dp"
+            android:switchPadding="@dimen/switch_icon_text_space"
+            android:text="Settled" />
+
+        <!-- Settled by -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/listrow_topmargin_multiline">
+
+            <EditText
+                android:id="@+id/settledbyID"
+                style="@style/normalTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_settledby"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1"
+                android:nextFocusForward="@+id/voucherID"
+                android:singleLine="true"
+                android:textColorHint="@color/colorTextSecondary"
+                android:textSize="@dimen/mediumtextSize" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Voucher No -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/voucherID"
+                style="@style/normalTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_voucherno"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1"
+                android:nextFocusForward="@+id/dateID"
+                android:singleLine="true"
+                android:textColorHint="@color/colorTextSecondary"
+                android:textSize="@dimen/mediumtextSize" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/listrow_topmargin_multiline"
+            android:background="@color/colorBtnBackground"
+            android:text="@string/submit"
+            android:textAllCaps="true"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

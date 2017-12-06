@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="org.app.mydukan.fragments.DescriptionFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/listrow_topmargin_multiline"
+            android:text="Description : "
+            android:layout_marginLeft="10dp"
+            android:textColor="#CC0033"
+            android:textSize="@dimen/mediumtextSize"
+            android:textStyle="normal|bold"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <Button
+            android:id="@+id/btn_DownloadProductPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_gravity="right"
+            android:drawableLeft="@drawable/ic_download"
+            android:drawablePadding="6dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:textAllCaps="false"
+            android:background="@android:color/transparent"
+            android:textColor="@color/new_btn_blue"
+            android:text="Download"
+            android:ellipsize="middle"
+            android:visibility="gone"
+            android:lines="1"
+            android:textSize="12sp"
+            tools:ignore="EllipsizeMaxLines" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/descTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="@dimen/listrow_topmargin_multiline"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/smalltextSize"
+        tools:ignore="RtlHardcoded" />
+
+    <WebView
+        android:id="@+id/descWebView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Product description ..."
+        tools:ignore="HardcodedText"/>
+
+
+</LinearLayout>

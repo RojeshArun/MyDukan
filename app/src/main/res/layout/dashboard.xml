@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/new_btn_blue_baground"
+    android:orientation="vertical"
+    app:ignore="NamespaceTypo">
+
+
+    <RelativeLayout
+        android:id="@+id/btn_my_schemes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_shadow">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="My Schemes"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:padding="10dp"
+
+            android:src="@drawable/ic_my_schemes"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/btn_calculator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_shadow">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Calculator"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp" />
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_calculator"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/btn_earnings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_shadow">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Earnings"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_earnings"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+</LinearLayout>

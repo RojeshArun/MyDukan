@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.app.mydukan.activities.FeedPrifileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/pb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="500dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            tools:ignore="MissingConstraints"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/profile_IMG"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_action_profile"
+                        tools:ignore="ContentDescription" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/profile_Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/app_colorPrimaryDark"
+                            android:textSize="@dimen/largetextSize"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/profile_Email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Shivayogih72@gmail.com"
+                            android:visibility="gone"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/profile_Profection"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="6dp"
+                            android:text=""
+                            android:background="@drawable/bg_buttons"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/microtextSize"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <Button
+                                android:id="@+id/btn_follow"
+                                android:layout_width="match_parent"
+                                android:layout_height="25sp"
+                                android:layout_weight="1"
+                                android:background="@color/colorPrimary"
+                                android:text="Follow"
+                                android:textColor="@color/white"
+                                android:textAllCaps="false"
+                                tools:ignore="HardcodedText" />
+                            <TextView
+                                android:id="@+id/profile_Followers"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="2sp"
+                                android:layout_weight="1" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:weightSum="2">
+
+                    <Button
+                        android:id="@+id/view_followers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/tw__transparent"
+                        android:text="Followers"
+                        android:textAllCaps="false"
+                        android:textColor="@color/cardview_green"
+                        tools:ignore="HardcodedText" />
+
+                    <Button
+                        android:id="@+id/view_following"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/tw__transparent"
+                        android:text="Following"
+                        android:textAllCaps="false"
+                        android:textColor="@color/cardview_green"
+                        tools:ignore="HardcodedText" />
+
+                  <!--  <Button
+                        android:id="@+id/View_profileLikes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/tw__transparent"
+                        android:text="Posts"
+                        android:textAllCaps="false"
+                        android:textColor="@color/cardview_green"
+                        tools:ignore="HardcodedText" />-->
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <LinearLayout
+                android:id="@+id/layout_feedPost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/bg_border_rectangle"
+                android:orientation="vertical"
+                android:padding="6dp"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/editTextprofile"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/listrow_topmargin"
+                    android:hint="Write something to post here..."
+                    android:maxLines="25"
+                    android:minLines="3"
+                    android:scrollHorizontally="false"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/smalltextSize"
+                    tools:ignore="HardcodedText" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+
+                    <ImageView
+                        android:id="@+id/img_addedImg"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:scaleType="fitXY"
+                        tools:ignore="ContentDescription" />
+
+                    <Button
+                        android:id="@+id/cameraBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@id/img_addedImg"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:clickable="true"
+                        android:drawableRight="@drawable/ic_gallery"
+                        android:ellipsize="middle"
+                        android:lines="1"
+                        android:scaleType="fitXY"
+                        android:text="Add Image"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/mediumtextSize"
+                        tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+                    <Button
+                        android:id="@+id/btn_post"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@id/cameraBtn"
+                        android:background="@color/app_colorAccent"
+                        android:text="Post Now"
+                        tools:ignore="HardcodedText" />
+                </RelativeLayout>
+
+            </LinearLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_list_feed"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone"/>
+            <ListView
+                android:id="@+id/completeList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="80dp" >
+            </ListView>
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

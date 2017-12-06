@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/schemelayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/screenBackground"
+    android:orientation="vertical"
+    android:padding="@dimen/card_padding"
+    tools:ignore="RtlHardcoded">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primary"
+        android:textSize="@dimen/smalltextSize"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:text="description"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/smalltextSize"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/validitiy"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/description"
+        android:text="Validity "
+        android:textColor="@color/date_time_color"
+        android:textSize="@dimen/microtextSize"
+        android:textStyle="normal|bold"
+        tools:ignore="HardcodedText" />
+
+    <CheckBox
+        android:id="@+id/chk_enrolled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="2dp"
+        android:padding="6dp"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

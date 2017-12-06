@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/supplierlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/recycler_listview"
+        android:layout_above="@+id/cmplnt_lst_add_id"/>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/filter_action_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_above="@+id/cmplnt_lst_add_id"
+
+        fab:menu_animationDelayPerItem="2"
+        fab:menu_backgroundColor="#ccffffff"
+        fab:menu_colorNormal="#ff9800"
+        fab:menu_colorPressed="#F2AB00"
+        fab:menu_colorRipple="#EC2723"
+        fab:menu_icon="@drawable/ic_action_filter_white"
+        fab:menu_labels_ellipsize="end"
+        fab:menu_labels_hideAnimation="@anim/jump_to_down"
+        fab:menu_labels_position="left"
+        fab:menu_labels_showAnimation="@anim/jump_from_down"
+        fab:menu_labels_singleLine="true"
+        fab:menu_labels_style="@style/MenuLabelsStyle"
+        fab:menu_shadowColor="#444"
+        android:visibility="gone">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/all_fab"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/ic_action_update_white"
+            style="@style/MenuButtonsStyle"
+            fab:fab_label="View All"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/atozorder_fab"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/ic_action_font_white"
+            style="@style/MenuButtonsStyle"
+            fab:fab_label="Alphabetical A-Z"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/pricedesc_fab"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/ic_action_downward_white"
+            style="@style/MenuButtonsStyle"
+            fab:fab_label="Price - Low to High"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/pricease_fab"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/ic_action_upward_white"
+            style="@style/MenuButtonsStyle"
+            fab:fab_label="Price - High to Low"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/new_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fab_add"
+            style="@style/MenuButtonsStyle"
+            fab:fab_label="New Arrivals"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/pricedrop_fab"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/ic_action_trend_white"
+            style="@style/MenuButtonsStyle"
+            fab:fab_label="Price Drop"
+            fab:fab_size="mini" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+    <LinearLayout
+        android:id="@+id/cmplnt_lst_add_id"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="false"
+        android:orientation="vertical">
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView_MainFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            fab:adSize="BANNER"
+            fab:adUnitId="@string/banner_ad_unit_id_pfa"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/filter_action_menu"
+            android:layout_toEndOf="@+id/filter_action_menu">
+        </com.google.android.gms.ads.AdView>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

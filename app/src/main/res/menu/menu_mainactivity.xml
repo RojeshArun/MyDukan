@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myDukan="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_share"
+        android:title="Share"
+        myDukan:showAsAction="always"
+        android:icon="@drawable/ic_action_share"/>
+
+    <!--<item-->
+        <!--android:id="@+id/menu_notification"-->
+        <!--android:icon="@drawable/notificationicon"-->
+        <!--android:title="Notifications"-->
+        <!--myDukan:showAsAction="always"/>-->
+</menu>

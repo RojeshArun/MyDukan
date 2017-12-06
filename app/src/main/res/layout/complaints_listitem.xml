@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/complaintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/listrow_topmargin"
+    android:layout_marginBottom="@dimen/listrow_bottommargin"
+    android:layout_marginRight="@dimen/listrow_rightmargin"
+    android:layout_marginLeft="@dimen/listrow_leftmargin">
+
+    <TextView
+        android:id="@+id/complaintNo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/smalltextSize" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color"
+        android:layout_marginTop="@dimen/listrow_topmargin_multiline"
+        android:textSize="@dimen/smalltextSize" />
+
+    <TextView
+        android:id="@+id/filedDate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color"
+        android:layout_marginTop="@dimen/listrow_topmargin_multiline"
+        android:textSize="@dimen/smalltextSize" />
+
+    <TextView
+        android:id="@+id/comment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color"
+        android:layout_marginTop="@dimen/listrow_topmargin_multiline"
+        android:textSize="@dimen/smalltextSize" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color"
+        android:layout_marginTop="@dimen/listrow_topmargin_multiline"
+        android:textSize="@dimen/smalltextSize" />
+
+</LinearLayout>

@@ -1,0 +1,138 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/search_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+<RelativeLayout
+    android:id="@+id/myNetwork_Container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_below="@+id/appBarLayout" />
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:id="@+id/appBarLayout">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <ImageView
+                android:id="@+id/back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="8dp"
+                android:foregroundGravity="center_vertical"
+                android:src="@drawable/ic_action_arrowleft"
+                tools:ignore="ContentDescription" />
+
+           <!-- <ImageView
+                android:id="@+id/add_profile_button"
+                android:layout_width="25dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="14dp"
+                android:layout_gravity="bottom|right|end"
+                android:src="@drawable/ic_add_network_profile"
+                android:layout_alignTop="@+id/profile_view"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="14dp" />-->
+
+            <ImageView
+                android:id="@+id/btn_Search"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_network_search_icon"
+                android:layout_marginRight="30dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+               />
+
+            <RelativeLayout
+                android:id="@+id/profile_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/back_button"
+                android:layout_toRightOf="@+id/back_button"
+                android:layout_toLeftOf="@id/btn_Search"
+                >
+
+                <ImageView
+                    android:id="@+id/img_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:foregroundGravity="center_vertical"
+                    android:src="@drawable/ic_action_profile"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/tv_profileName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/img_pic"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_toEndOf="@+id/img_pic"
+                    android:layout_toRightOf="@+id/img_pic"
+                    android:text="Profile Name"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/tv_profileEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_profileName"
+                    android:layout_alignStart="@+id/tv_profileName"
+                    android:layout_below="@+id/tv_profileName"
+                    android:text="Profile Email"
+                    android:textSize="12sp"
+                    tools:ignore="HardcodedText,SmallSp" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabGravity="fill"
+            app:tabMode="fixed" />
+    </android.support.design.widget.AppBarLayout>
+    </RelativeLayout>
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_addPosts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_gravity="bottom|right|end"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:src="@drawable/ic_action_add"
+        app:backgroundTint="@color/buttonColorPressed"
+        app:borderWidth="0dp"
+        tools:ignore="RelativeOverlap,RtlHardcoded" />
+
+
+</android.support.design.widget.CoordinatorLayout>

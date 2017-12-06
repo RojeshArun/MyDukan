@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screenBackground"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="start"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/supplier"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/smalltextSize" />
+
+            <TextView
+                android:id="@+id/supplierName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/listrow_topmargin_multiline"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/smalltextSize" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/divider_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/listrow_topmargin"
+                android:background="@color/colorDivider" />
+
+            <Spinner
+                android:id="@+id/complaintTypeSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="@dimen/listrow_topmargin" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/divider_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/listrow_topmargin"
+                android:background="@color/colorDivider" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/listrow_topmargin"
+                android:text="@string/subject"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/smalltextSize" />
+
+            <EditText
+                android:id="@+id/subjectEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/listrow_topmargin_multiline"
+                android:hint="@string/hint_subject"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/smalltextSize" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/divider_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/listrow_topmargin"
+                android:background="@color/colorDivider" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/listrow_topmargin"
+                android:text="@string/hint_complainthelp"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/smalltextSize" />
+
+            <EditText
+                android:id="@+id/messageEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/listrow_topmargin"
+                android:hint="@string/hint_complaint"
+                android:maxLines="15"
+                android:minLines="10"
+                android:scrollHorizontally="false"
+                android:scrollbars="vertical"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/smalltextSize" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/divider_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/listrow_topmargin_multiline"
+                android:background="@color/text_muted_color" />
+
+            <Button
+                android:id="@+id/submitBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/listrow_topmargin"
+                android:background="@color/green_500"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                android:textColor="@color/buttontext" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

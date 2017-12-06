@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context="org.app.mydukan.activities.FeedProfileFollowActivity">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView_myFollower"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        ads:adSize="BANNER"
+        android:layout_alignParentBottom="true"
+        ads:adUnitId="@string/banner_myNetwork_ad_unit_id" />
+
+    <LinearLayout
+        android:layout_above="@id/adView_myFollower"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+   <TextView
+       android:id="@+id/tv_Title"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="My followers"
+       android:textSize="18sp"
+       android:textColor="@color/bodyTextColor"
+       android:layout_margin="8dp"/>
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    </LinearLayout>
+</RelativeLayout>

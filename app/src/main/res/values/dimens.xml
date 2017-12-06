@@ -1,0 +1,62 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">10dp</dimen>
+    <dimen name="activity_vertical_margin">30dp</dimen>
+    <dimen name="activity_bottom_margin">60dp</dimen>
+    <dimen name="cardview_horizontal_margin">8dp</dimen>
+
+
+    <!--The dimens for the text sizes.-->
+    <dimen name="nanotextSize">10sp</dimen>
+    <dimen name="microtextSize">12sp</dimen>
+    <dimen name="smalltextSize">14sp</dimen>
+    <dimen name="mediumtextSize_1">16sp</dimen>
+    <dimen name="mediumtextSize">18sp</dimen>
+    <dimen name="largetextSize">22sp</dimen>
+    <dimen name="largertextSizes">28sp</dimen>
+
+    <!--Dimensions for login screen-->
+
+    <!--Dimensions for layout-->
+    <dimen name="layoutmarginbig">10dp</dimen>
+    <dimen name="layoutmarginsmall">5dp</dimen>
+    <dimen name="layoutheight">30dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!--The dimens for the card layout.-->
+    <dimen name="card_padding">10dp</dimen>
+    <dimen name="listrow_imagewidth">38dp</dimen>
+    <dimen name="listrow_imageheight">38dp</dimen>
+
+    <!--The dimens for the listrow.-->
+    <dimen name="listrow_topmargin">10dp</dimen>
+    <dimen name="listrow_bottommargin">10dp</dimen>
+    <dimen name="listrow_rightmargin">8dp</dimen>
+    <dimen name="listrow_leftmargin">8dp</dimen>
+    <dimen name="listrow_topmargin_multiline">3dp</dimen>
+    <dimen name="listrow_icontext_space">8dp</dimen>
+
+
+    <!-- The space between the icon the text -->
+    <dimen name="icon_text_space">10dp</dimen>
+
+    <!-- The dimen for divider height -->
+    <dimen name="divider_height">1dp</dimen>
+
+    <dimen name="switch_icon_text_space">5dp</dimen>
+
+
+    <dimen name="fab_bottom_margin">10dp</dimen>
+
+    <dimen name="indicator_bottom_margin">10dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!--
+Refer to App Widget Documentation for margin information
+http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
+    -->
+    <dimen name="widget_margin">8dp</dimen>
+
+</resources>

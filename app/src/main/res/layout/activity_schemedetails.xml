@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_background"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark" />
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linear_scheme_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/schemeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/listrow_topmargin"
+            android:text="Scheme name. : #"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/mediumtextSize"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/divider_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/listrow_topmargin_multiline"
+            android:background="@color/separator_color" />
+
+        <TextView
+            android:id="@+id/supplierName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/listrow_topmargin_multiline"
+            android:text="Supplier name : "
+            android:textColor="@color/text_muted_color"
+            android:textSize="@dimen/smalltextSize" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/listrow_topmargin_multiline">
+
+            <TextView
+                android:id="@+id/startDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/listrow_topmargin_multiline"
+                android:text="Start Date: "
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/smalltextSize"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/endDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="End Date : "
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/smalltextSize"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/divider_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/listrow_topmargin_multiline"
+            android:background="@color/separator_color" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/listrow_topmargin_multiline">
+
+            <Switch
+                android:id="@+id/enrolledBtn"
+                android:text="Enrolled"
+                android:switchPadding="@dimen/switch_icon_text_space"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/detailsBtn"
+                android:layout_alignBottom="@+id/detailsBtn"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:id="@+id/detailsBtn"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:background="@android:color/transparent"
+                android:text="@string/details"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/divider_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/listrow_topmargin_multiline"
+            android:background="@color/separator_color" />
+
+            <TextView
+                android:id="@+id/descTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/listrow_topmargin_multiline"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/smalltextSize" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_DownloadPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_gravity="right"
+            android:drawableLeft="@drawable/ic_download"
+            android:drawablePadding="6dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:textAllCaps="false"
+            android:background="@android:color/transparent"
+            android:textColor="@color/new_btn_blue"
+            android:text="Download"
+            android:ellipsize="middle"
+            android:visibility="gone"
+            android:lines="1"
+            android:textSize="12sp"
+            tools:ignore="EllipsizeMaxLines" />
+       <!-- <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/listrow_topmargin_multiline"
+            android:text="Description : "
+            android:visibility="gone"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/smalltextSize" />-->
+
+
+
+       <!-- <WebView
+            android:id="@+id/descWebView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="Scheme description ..."
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="2dp"
+            android:clickable="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="2dp"
+            />-->
+        <RelativeLayout
+            android:id="@+id/weblayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="Scheme description ..."
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="2dp"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="2dp">
+
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:id="@+id/btn_FullPage"
+                android:background="@drawable/ic_expand"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                />
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:id="@+id/btn_NormalPage"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone"
+                android:background="@drawable/ic_minimize"/>
+
+            <WebView
+                android:id="@+id/descWebView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Scheme description ..."
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="2dp"
+                android:clickable="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="2dp"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

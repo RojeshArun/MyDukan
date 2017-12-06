@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTextPrimary">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/closeButton"
+        android:layout_toEndOf="@+id/logo"
+        android:layout_toRightOf="@+id/logo"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="@dimen/largetextSize"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/closeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/youtube_view"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/youtube_view"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/ic_closed_34"
+        android:elevation="0dp"
+        android:padding="16dp"
+        tools:ignore="ContentDescription" />
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/youtube_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="150dp"
+        android:gravity="center" />
+    <!--
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="50dp"
+    android:orientation="vertical"
+    android:id="@+id/linearLayout5"
+    android:layout_above="@+id/cmplnt_lst_add_id">
+
+
+
+
+
+                    <com.google.android.youtube.player.YouTubePlayerView
+                        android:id="@+id/youtube_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="350dp"
+                        android:background="#fff"
+                        android:padding="5dp" />
+
+
+        </LinearLayout>
+
+  -->
+    <LinearLayout
+        android:id="@+id/cmplnt_lst_add_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical">
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView_youtube_video"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="4dp"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id_ndla">
+        </com.google.android.gms.ads.AdView>
+    </LinearLayout>
+</RelativeLayout>

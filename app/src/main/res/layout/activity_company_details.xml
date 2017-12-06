@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="org.app.mydukan.activities.CompanyDetails">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?attr/colorPrimary"
+        android:orientation="horizontal"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <ImageView
+            android:id="@+id/back_button_2"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:foregroundGravity="center_vertical"
+            android:src="@drawable/ic_action_arrowleft"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:text="Company Details"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/largetextSize"
+            android:foregroundGravity="center_vertical"
+            android:layout_margin="8dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        android:paddingTop="35dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="Company / Outlet Name"
+            android:textColor="#4285F4"
+            android:textSize="@dimen/mediumtextSize_1" />
+
+        <EditText
+            android:id="@+id/user_Company_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/tw__transparent"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:hint="Company / Outlet Name"
+            android:paddingBottom="4dp"
+            android:paddingTop="6dp"
+            android:textColor="@color/text_color"
+            android:textColorHint="#ababab"
+            android:textSize="@dimen/mediumtextSize" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="4px"
+            android:layout_marginBottom="15dp"
+            android:background="@color/cardview_green" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="My Profession"
+            android:textColor="#4285F4"
+            android:textSize="@dimen/mediumtextSize_1" />
+
+        <EditText
+            android:id="@+id/user_My_Profession"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/tw__transparent"
+            android:hint="My Profession"
+            android:maxLines="1"
+            android:paddingBottom="4dp"
+            android:paddingTop="6dp"
+            android:textColor="@color/text_color"
+            android:textColorHint="#ababab"
+            android:textSize="@dimen/mediumtextSize"
+
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="none"
+            android:clickable="true"
+            />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="4px"
+            android:layout_marginBottom="15dp"
+            android:background="@color/cardview_green" />
+
+        <LinearLayout
+            android:id="@+id/linear_Brand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="Brand"
+            android:textColor="#4285F4"
+            android:textSize="@dimen/mediumtextSize_1" />
+
+        <EditText
+            android:id="@+id/user_Brand_Selection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/tw__transparent"
+            android:hint="My Brand"
+            android:maxLines="1"
+            android:paddingBottom="2dp"
+            android:paddingTop="6dp"
+            android:textColor="@color/text_color"
+            android:textColorHint="#ababab"
+            android:textSize="@dimen/mediumtextSize"
+
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="none"
+            android:clickable="true"
+            />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="4px"
+            android:layout_marginBottom="15dp"
+            android:background="@color/cardview_green" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_ShopNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:foregroundGravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="Shop Number"
+                android:textColor="#4285F4"
+                android:textSize="@dimen/mediumtextSize_1" />
+
+            <EditText
+                android:id="@+id/user_Shop_Nmber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tw__transparent"
+                android:hint="My Shop Number"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingBottom="4dp"
+                android:paddingTop="6dp"
+                android:textColor="@color/text_color"
+                android:textColorHint="#ababab"
+                android:textSize="@dimen/mediumtextSize"
+                />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="4px"
+                android:layout_marginBottom="15dp"
+                android:background="@color/cardview_green" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_DistributorNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:foregroundGravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="Distributor Number"
+                android:textColor="#4285F4"
+                android:textSize="@dimen/mediumtextSize_1" />
+
+            <EditText
+                android:id="@+id/user_Distributor_Nmber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tw__transparent"
+                android:hint="Distributor Number"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingBottom="4dp"
+                android:paddingTop="6dp"
+                android:textColor="@color/text_color"
+                android:textColorHint="#ababab"
+                android:textSize="@dimen/mediumtextSize"
+                />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="4px"
+                android:layout_marginBottom="15dp"
+                android:background="@color/cardview_green" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_officeEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:foregroundGravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="Office Email"
+                android:textColor="#4285F4"
+                android:textSize="@dimen/mediumtextSize_1" />
+
+            <EditText
+                android:id="@+id/user_office_Mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tw__transparent"
+                android:hint="My Office Email"
+                android:imeOptions="actionDone"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:paddingBottom="4dp"
+                android:paddingTop="6dp"
+                android:textColor="@color/text_color"
+                android:textColorHint="#ababab"
+                android:textSize="@dimen/mediumtextSize"
+                />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="4px"
+                android:layout_marginBottom="15dp"
+                android:background="@color/cardview_green" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_GST"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:foregroundGravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="GST Number"
+                android:textColor="#4285F4"
+                android:textSize="@dimen/mediumtextSize_1" />
+
+            <EditText
+                android:id="@+id/user_GST_Nmber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tw__transparent"
+                android:hint="Enter GST Number"
+                android:inputType="textCapCharacters"
+                android:imeOptions="actionDone"
+                android:maxLines="1"
+                android:paddingBottom="4dp"
+                android:paddingTop="6dp"
+                android:textColor="@color/text_color"
+                android:textColorHint="#ababab"
+                android:textSize="@dimen/mediumtextSize" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="4px"
+                android:background="@color/cardview_green" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:foregroundGravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:text="*For Retailers, if No GST number, please upload your\nBuisiness Card / Shop Photo"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/microtextSize" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:foregroundGravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="Upload Business Card / Shop Photo"
+            android:textColor="#4285F4"
+            android:textSize="@dimen/mediumtextSize_1" />
+
+        <Button
+            android:id="@+id/user_Business_Card"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="#4285F4"
+            android:padding="3dp"
+            android:text="@string/upload"
+            android:textColor="@color/white"
+            android:textSize="@dimen/mediumtextSize_1"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/user_Profile_Submit"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:background="#4285F4"
+        android:padding="3dp"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/mediumtextSize_1"
+        />
+
+</LinearLayout>

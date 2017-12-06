@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="org.app.mydukan">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.hardware.camera" />
+    <uses-permission android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="com.moengage.demoapp.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".application.MyDukan"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="UnusedAttribute">
+
+        <!--
+         <meta-data
+         android:name="com.google.firebase.messaging.default_notification_icon"
+         android:resource="@mipmap/ic_launcher" />
+        -->
+        <!-- PLease addthe True Sdk partnerKey For Mobile Number Verification -->
+        <meta-data
+            android:name="com.truecaller.android.sdk.PartnerKey"
+            android:value="@string/partnerKey" />
+        <meta-data
+            android:name="CLEVERTAP_ACCOUNT_ID"
+            android:value="R97-779-R94Z" />
+        <meta-data
+            android:name="CLEVERTAP_TOKEN"
+            android:value="caa-ac2" />
+        <!-- MOENGAGE RECEIVER FOR RECEIVING INSTALLATION INTENT -->
+        <receiver android:name="com.moe.pushlibrary.InstallReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.moengage.worker.MoEGCMListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher" />
+        <!--
+             Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorDivider" />
+        <!-- [END fcm_default_icon] -->
+        <!-- [START fcm_default_channel] -->
+
+        <service android:name="com.clevertap.android.sdk.FcmTokenListenerService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".activities.LaunchActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.MyNetworksActivity"
+            android:label="MyNetwork"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.clevertap.android.sdk.InAppNotificationActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- uncomment below block to ensure in-app notification isn't shown on a splash screen -->
+        <meta-data
+            android:name="CLEVERTAP_INAPP_EXCLUDE"
+            android:value="SplashActivity1, SplashActivity2" />
+
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+                <action android:name="Notification" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SupplierListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ProductListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="showInApp"
+                android:value="false" />
+        </activity>
+        <activity
+            android:name=".activities.ProductDescriptionActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.HelpActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Schemes.SchemeListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Schemes.SchemeDetailsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Schemes.AddSchemeRecordActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Schemes.SchemeRecordActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.NotificationListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.NotificationDetailsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ComplaintsListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AddComplaintsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.NotificationsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.CategoryListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="showInApp"
+                android:value="false" />
+        </activity>
+        <activity
+            android:name=".activities.OrderListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.PlaceOrderActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.OrderDetailsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.RecordsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.RecordDetailsActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Doa.DoaRecordListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Doa.AddDoaRecordListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.GenerateQRCodeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ServiceProviders"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".services.MydukanInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- Listener for Receiving push payload from FCM -->
+
+        <service android:name="com.moengage.firebase.MoEngaeFireBaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- Listener for refresh token callback -->
+
+        <service android:name="com.moengage.firebase.MoEngageFireBaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.moengage.receiver.MoEInstanceIDListener"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+
+        <!-- MANDATORY FIELD: APP ID AS SEEN ON MOENGAGE DASHBOARD APP SETTINGS PAGE -->
+        <meta-data
+            android:name="APP_ID"
+            android:value="B2JUXC91LG9VLJDHNHLWQ1G2" />
+
+        <!-- MANDATORY FIELD: SENDER ID , i.e. THE PROJECT NUMBER AS MENTIONED ON GOOGLE CLOUD CONSOLE PROJECTS PAGE -->
+        <meta-data
+            android:name="SENDER_ID"
+            android:value="id:413810897970" />
+
+        <!-- MANDATORY FIELD: THE NOTIFICATION SMALL ICON WHICH WILL BE USED TO SET TO NOTIFICATIONS POSTED -->
+        <meta-data
+            android:name="NOTIFICATION_ICON"
+            android:value="@mipmap/ic_launcher" />
+
+        <!-- MANDATORY FIELD: THE NOTIFICATION LARGE ICON WHICH WILL BE USED TO SET TO NOTIFICATIONS POSTED -->
+        <meta-data
+            android:name="NOTIFICATION_LARGE_ICON"
+            android:value="@mipmap/ic_launcher" />
+        <meta-data
+            android:name="NOTIFICATION_TYPE"
+            android:value="@integer/notification_type_multiple" />
+
+        <receiver
+            android:name=".services.FirebaseDataReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="366f6c31c3075f75036b30ddfe6ef45394d13425" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCZjcIxNyQyONEeanxuvbay-yGkyxgsiko" />
+
+        <activity
+            android:name="com.paytm.pgsdk.PaytmPGActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard"
+            android:screenOrientation="portrait" />
+        -keepclassmembers class com.paytm.pgsdk.PaytmWebView$PaytmJavaScriptInterface {
+        public *;
+        }
+        <activity
+            android:name=".activities.AddIMEIActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.NotificationDescriptionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.PrivacyPolicyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.VideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.VidPlayer"
+            android:label="Player"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="mydukan.com"
+                    android:scheme="http" />
+                <data
+                    android:host="mydukan.com"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.JsonActivity"
+            android:label="@string/title_activity_json"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.DistributorProvider"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AddFeed"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.FeedPrifileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Search_MyNetworkActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MyProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.FeedProfileFollowActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AskRajuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.PaytmGatewayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.WebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MyAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activities.PostCommentsActivity" />
+        <activity
+            android:name=".activities.CommentsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MerchantActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.NewSignUpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver android:name="swarajsaaj.smscodereader.receivers.OtpReader">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activities.UsersLocationAddress"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activities.UserProfile" />
+        <activity android:name=".activities.CompanyDetails" />
+        <activity
+            android:name=".fragments.myschemes.MySchemesActivity"
+            android:label="@string/title_activity_my_schemes_fragment"
+            android:theme="@style/AppTheme"></activity>
+    </application>
+
+</manifest>

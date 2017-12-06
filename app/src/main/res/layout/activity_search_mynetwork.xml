@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.app.mydukan.activities.Search_MyNetworkActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/linearLayout11"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/buttonColor"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/card_padding"
+        tools:ignore="ObsoleteLayoutParam">
+
+        <ImageView
+            android:id="@+id/back_BTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_arrowleft"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/card_padding"
+            android:text="My Dukan"
+            android:textColor="@color/white"
+            android:textSize="@dimen/largetextSize"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/layout_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:background="@color/com_facebook_button_background_color"
+            android:orientation="vertical"
+            android:layout_below="@+id/pb"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/smalltextSize"
+                android:textColor="@color/white"
+                android:fontFamily="serif"
+                android:text="@string/SearchContents"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/smalltextSize"
+                android:textColor="@color/white"
+                android:fontFamily="serif"
+                android:text="Search the Profile to Follow by entering their Registered Mobile Number Below"
+                tools:ignore="HardcodedText" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp">
+
+                <EditText
+                    android:id="@+id/searchMobNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_toLeftOf="@+id/button_Search"
+                    android:layout_toStartOf="@+id/button_Search"
+                    android:gravity="center"
+                    android:hint="Phone Number"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:fontFamily="serif"
+                    android:textSize="16sp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/colorDivider"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+
+                <Button
+                    android:id="@+id/button_Search"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/bg_border_rectangle"
+                    android:layout_alignParentTop="true"
+                    android:text="search"
+                    tools:ignore="HardcodedText" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/button_Search_ContactList"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_height="35dp"
+                android:padding="6dp"
+                android:layout_gravity="start"
+                android:background="@drawable/bg_border_rectangle"
+                android:text="Select from Contacts"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_list_feed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/layout_search" />
+
+        <ProgressBar
+            android:id="@+id/pb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="168dp"
+            tools:layout_editor_absoluteY="234dp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,184 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+
+    }
+
+    dependencies {
+        // The Fabric Gradle plugin uses an open ended version to react
+        // quickly to Android tooling updates
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+    jcenter()
+    maven { url "https://jitpack.io" }
+
+    flatDir {
+        dirs 'libs'
+    }
+}
+android {
+    compileSdkVersion 25
+    buildToolsVersion '26.0.2'
+    //useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "org.app.mydukan"
+        minSdkVersion 16
+        targetSdkVersion 25
+        /* versionCode 109
+        versionName "14.09"
+
+        versionCode 118
+        versionName "18.12"
+
+        versionCode 112
+        versionName "14.12"
+
+        */
+
+        versionCode 118
+        versionName "14.18"
+        /* versionCode 120
+        versionName "14.20"*/
+        multiDexEnabled true
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath true
+            }
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/MANIFEST.MF'
+
+    }
+    sourceSets { debug { assets.srcDirs = ['src/debug/assets', 'src/debug/assets/'] } }
+}
+
+dependencies {
+
+    //compile project(':libraries/appdukan')
+
+    // Crashlytics Kit
+    compile('com.crashlytics.sdk.android:crashlytics:2.6.5@aar') {
+        transitive = true
+    }
+    compile('com.digits.sdk.android:digits:2.0.2@aar') {
+        transitive = true;
+    }
+    //Paytm gatewaySdk
+
+    // compile files('libs/android SDK/PGSDK_v1.0.1.jar')
+    compile files('libs/android SDK/PGSDK_V2.0.jar')
+    //Meterial Badge For Notification
+
+    //True Caller Sdk for  mobile number verification.
+    compile(name: "truesdk-0.5", ext: "aar")
+    // Supports Android 4.0.3 and later (API level 15)
+    compile files('libs/YouTubeAndroidPlayerApi.jar')
+    /// Cleaver tap integration
+    compile('com.moengage:moengage-segment-integration:2.0.00') {
+        transitive = true
+    }
+    compile('com.moengage:moe-android-sdk:7.7.01') {
+        exclude group: 'com.moengage', module: 'moe-push-gcm'
+    }
+    compile('com.google.firebase:firebase-core:10.0.1') {
+        exclude group: 'com.android.support', module: 'support-v4'
+        exclude group: 'com.android.support', module: 'appcompat-v7'
+    }
+    compile('com.firebaseui:firebase-ui:0.6.0') {
+        exclude group: 'com.android.support', module: 'support-v4'
+        exclude group: 'com.android.support', module: 'appcompat-v7'
+    }
+    compile('com.google.android.gms:play-services:10.0.1') {
+        exclude group: 'com.android.support', module: 'support-v4'
+        exclude group: 'com.android.support', module: 'appcompat-v7'
+    }
+    compile('com.github.wooplr:Spotlight:1.2.3') {
+        exclude group: 'com.android.support', module: 'support-v4'
+        exclude group: 'com.android.support', module: 'appcompat-v7'
+    }
+    compile('com.github.championswimmer:Android-SocialButtons:1.0') {
+        exclude group: 'com.android.support', module: 'support-v4'
+        exclude group: 'com.android.support', module: 'appcompat-v7'
+    }
+    compile('com.sandrios.android:sandriosCamera:1.0.9') {
+        exclude group: 'com.android.support', module: 'support-v4'
+        exclude group: 'com.android.support', module: 'appcompat-v7'
+    }
+    compile('net.gotev:uploadservice:2.1') {
+        exclude group: 'com.android.support', module: 'support-v4'
+        exclude group: 'com.android.support', module: 'appcompat-v7'
+    }
+    compile(name: "truesdk-0.5", ext: "aar")
+    compile 'com.github.deano2390:MaterialShowcaseView:1.1.0'
+    compile 'com.nex3z:notification-badge:0.2.0'
+    compile 'com.crystal:crystalrangeseekbar:1.1.1'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support:cardview-v7:25.3.1'
+    compile 'com.firebase:firebase-client-android:2.3.1'
+    compile 'com.google.firebase:firebase-database:10.0.1'
+    compile 'com.google.firebase:firebase-auth:10.0.1'
+    compile 'com.google.firebase:firebase-storage:10.0.1'
+    compile 'com.google.firebase:firebase-messaging:10.0.1'
+    compile 'com.google.firebase:firebase-ads:10.0.1'
+    compile 'com.github.clans:fab:1.6.4'
+    compile 'com.google.android.gms:play-services-location:10.0.1'
+    compile 'com.squareup.picasso:picasso:2.4.0'
+    compile 'com.jraska:falcon:1.0.4'
+    compile 'commons-io:commons-io:2.4'
+    compile 'com.google.firebase:firebase-config:10.0.1'
+    compile 'com.google.firebase:firebase-invites:10.0.1'
+    compile 'com.google.android.gms:play-services-appinvite:10.0.1'
+    compile 'com.journeyapps:zxing-android-embedded:3.4.0'
+    compile 'com.google.zxing:core:3.3.0'
+    compile 'com.android.support:multidex:1.0.0'
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.github.amlcurran.showcaseview:library:5.4.3'
+    compile 'com.clevertap.android:clevertap-android-sdk:3.1.2'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.moengage:moe-android-sdk:7.7.03'
+    compile 'com.segment.analytics.android:analytics:+'
+    compile 'com.moengage:moe-push-firebase:1.1.01'
+    compile 'com.facebook.fresco:fresco:0.12.0'
+    compile 'com.facebook.fresco:animated-gif:0.12.0'
+    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    compile 'me.relex:circleindicator:1.2.1@aar'
+    compile 'com.github.JakeWharton:ViewPagerIndicator:2.4.1'
+    compile 'com.firebaseui:firebase-ui-database:1.1.1'
+    compile 'ai.api:sdk:2.0.7@aar'
+    compile 'ai.api:libai:1.4.8'
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile 'swarajsaaj:otpreader:1.1'
+    compile files('libs/android SDK/PGSDK_V2.0.jar')
+//    compile 'org.apache.logging.log4j:log4j-api:2.3'
+//    compile 'org.apache.logging.log4j:log4j-core:2.3'
+//    compile 'com.atteq:android-log4j2-support:2.3'
+}
+apply plugin: 'com.google.gms.google-services'
+
+

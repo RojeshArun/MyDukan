@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:elevation="2dp">
+
+            <LinearLayout
+                android:id="@+id/filters"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical"
+                android:padding="10dip">
+
+                <!--<TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text=" Lets FIND A MOBILE..."
+                    android:textStyle="bold" />-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_dialog"
+                        android:orientation="vertical"
+                        android:padding="1dp">
+                        <!-- Text Label -->
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:text="Select Category:"
+                            android:textColor="#FF0000FF" />
+                        <!-- Spinner Element -->
+                        <Spinner
+                            android:id="@+id/categ"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:prompt="@string/app_name" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_dialog"
+                        android:orientation="vertical"
+                        android:padding="2dp">
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="sans-serif"
+                            android:text="Select DP/MOP:"
+                            android:textColor="#FF0000FF" />
+
+                        <!-- Spinner Element -->
+                        <Spinner
+                            android:id="@+id/pricetype"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:prompt="@string/app_name" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Price Range:"
+                    android:textColor="#FF0000FF" />
+
+                <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+                    android:id="@+id/rangeSeekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/filters"
+                    app:bar_color="#D8D8D8"
+                    app:bar_highlight_color="#66000000"
+                    app:corner_radius="2"
+                    app:data_type="_integer"
+                    app:gap="1000"
+                    app:left_thumb_color="#303F9F"
+                    app:left_thumb_color_pressed="#FF0000FF"
+                    app:max_value="25500"
+                    app:min_value="500"
+                    app:right_thumb_color="#303F9F"
+                    app:right_thumb_color_pressed="#FF0000FF"
+                    app:steps="500" />
+
+                <RelativeLayout
+                    android:id="@+id/values"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/rangeSeekbar"
+                    android:padding="10dip">
+
+                    <TextView
+                        android:id="@+id/minVal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@color/googlered" />
+
+                    <TextView
+                        android:id="@+id/maxVal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/googlered" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/findcat"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_below="@id/values"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/orange_one"
+                    android:fontFamily="sans-serif"
+                    android:text="Apply"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/mediumtextSize"
+                    android:visibility="gone"
+                    android:textStyle="normal" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+</LinearLayout>

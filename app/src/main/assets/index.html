@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="ISO-8859-1">
+<meta charset="UTF-8">
+<meta name="myDukan" content="Best Application Which Unites Distributers &Retailers,
+,No1 Retailer Application,Famous Retailer app,MY DUKAN,mydukan,myDukan">
+<title>Service Providers</title>
+
+ <!-- CSS -->
+    <link href="image/mydukan.png" rel="icon">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootswatch/3.2.0/sandstone/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" rel="stylesheet">
+    <link  rel="stylesheet" href="css/main.css">
+    
+</head>
+<body id="bdy">
+<div class="container" data-ng-app="sortApp" data-ng-controller="mainController">
+ <!-- <marquee  behavior="alternate"><img src="image/mydukan.png" id="logo">
+<br>
+<label text-align="bottom">myDukan</label>
+</marquee> -->
+<h1>Service Providers Details</h1>
+
+<div >
+<form id="fm">
+    <div class="form-group">
+      <div class="input-group">
+        <div class="input-group-addon"><i class="fa fa-search"></i></div>
+
+        <input type="text" class="form-control" placeholder="Search here by.ex:CompanyName/City/Address/PinCode/PhoneNumber." data-ng-model="redmiServiceProviders">
+
+      </div>      
+    </div>
+  </form>
+</div>
+<div id="pagewrap">
+<table class="table  table-responsive table-bordered table-stripped col-sm-6">
+  
+  <thead>
+    <tr>
+    <!-- making each table heading Clickable to sort -->
+        <td data-label="CompanyName">
+        <a href="#" data-ng-click="sortType = 'CompanyName'; sortReverse = !sortReverse">
+            CompanyName
+            <span data-ng-show="sortType == 'CompanyName'&& !sortReverse" class="fa fa-caret-down"></span>
+            <span data-ng-show="sortType == 'CompanyName'&& sortReverse" class="fa fa-caret-up"></span>
+        </a>
+        </td>
+        <td data-label="Brand">
+        <a href="#" data-ng-click="sortType = 'Brand'; sortReverse = !sortReverse">
+            Brand
+            <span data-ng-show="sortType == 'Brand'&& !sortReverse" class="fa fa-caret-down"></span>
+            <span data-ng-show="sortType == 'Brand'&& sortReverse" class="fa fa-caret-up"></span>
+        </a>
+        </td>
+        <td data-label="City">
+        <a href="#" data-ng-click="sortType = 'City'; sortReverse = !sortReverse">
+        City
+            <span data-ng-show="sortType == 'City'&& !sortReverse" class="fa fa-caret-down"></span>
+            <span data-ng-show="sortType == 'City'&& sortReverse" class="fa fa-caret-up"></span>
+            </a>
+        </td>
+        <td data-label="Address">
+        <a href="#" data-ng-click="sortType='Address'; sortReverse = !sortReverse">
+        Address
+            <span data-ng-show="sortType == 'Address'&& !sortReverse" class="fa fa-caret-down"></span>
+            <span data-ng-show="sortType == 'Address'&& sortReverse" class="fa fa-caret-up"></span>
+        </a>
+        </td>
+        
+        <td data-label="State">
+        <a href="#" data-ng-click="sortType='State'; sortReverse = !sortReverse">
+        State
+            <span data-ng-show="sortType == 'State'&& !sortReverse" class="fa fa-caret-down"></span>
+            <span data-ng-show="sortType == 'State'&& sortReverse" class="fa fa-caret-up"></span>
+        </a>
+        </td>
+        
+        <td data-label="PinCode">
+        <a href="#" data-ng-click="sortType ='PinCode'; sortReverse = !sortReverse">
+        PinCode
+            <span data-ng-show="sortType == 'PinCode'&& !sortReverse" class="fa fa-caret-down"></span>
+            <span data-ng-show="sortType == 'PinCode'&& sortReverse" class="fa fa-caret-up"></span>
+        </a>
+        </td>
+        <td data-label="PhoneNumber">
+        <a href="#" data-ng-click="sortType ='PhoneNumber'; sortReverse = !sortReverse">
+        PhoneNumber
+            <span data-ng-show="sortType == 'PhoneNumber'&& !sortReverse" class="fa fa-caret-down"></span>
+            <span data-ng-show="sortType == 'PhoneNumber'&& sortReverse" class="fa fa-caret-up"></span>
+        </a>
+        </td>
+  </tr>
+  </thead>
+  
+  <tbody>
+  <!--  begin every time when you refresh the page default sort is By CompanyName-->
+    <tr  data-ng-repeat="roll in jsonData | orderBy:sortType:sortReverse | filter:redmiServiceProviders">
+    <!-- end -->
+     <td >{{roll.CompanyName}}</td>
+     <td >{{roll.Brand}}</td>
+     <td >{{roll.City}}</td>
+     <td >{{roll.Address}}</td>
+     <td >{{roll.State}}</td>
+     <td >{{roll.PinCode}}</td>
+     <td >{{roll.PhoneNumber}}</td>
+   </tr>
+  
+  </tbody>
+
+
+</table>
+
+
+</div>
+</div>
+
+<!-- include angularjs lib -->
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+  <script src="js/data.js"></script>
+  
+</body>
+</html>

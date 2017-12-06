@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_notification_description"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.app.mydukan.activities.NotificationDescriptionActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:background="@color/buttonColor"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout4">
+
+        <ImageButton
+            android:id="@+id/ibtn_Back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="fitXY"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:background="@drawable/ic_action_arrowleft"
+            android:padding="@dimen/activity_horizontal_margin"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/toolbarName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/buttonTextColor"
+            android:textSize="20sp"
+            android:text="New Notification"
+            android:layout_margin="@dimen/card_padding"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+        <ImageButton
+            android:id="@+id/ibtn_share"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:background="@drawable/ic_action_share"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:scaleType="fitXY"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cmplnt_lst_add_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView_MainFragment_one"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            fab:adSize="BANNER"
+            fab:adUnitId="@string/banner_ad_unit_id_pdfa"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/filter_action_menu"
+            android:layout_toEndOf="@+id/filter_action_menu">
+        </com.google.android.gms.ads.AdView>
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="PxUsage"
+        android:layout_above="@+id/cmplnt_lst_add_id"
+        android:layout_below="@+id/linearLayout4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/cmplnt_lst_add_id"
+        android:orientation="vertical"
+        android:layout_below="@+id/linearLayout4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/tv_msgTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/layoutmarginsmall"
+                android:textColor="@color/date_time_color"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="ObsoleteLayoutParam" />
+
+            <TextView
+                android:id="@+id/tv_msgBody"
+                android:layout_margin="@dimen/layoutmarginsmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="413dp"
+            android:orientation="vertical"
+            android:weightSum="1"
+            >
+
+            <ImageView
+                android:id="@+id/img_Notification"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:visibility="gone"
+                tools:ignore="ContentDescription" />
+
+            <WebView
+                android:id="@+id/webview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="@dimen/layoutmarginsmall"
+                android:background="@drawable/bg_border_rectangle"
+                android:padding="@dimen/divider_height"
+                tools:ignore="WebViewLayout"
+                android:layout_weight="8.77"></WebView>
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

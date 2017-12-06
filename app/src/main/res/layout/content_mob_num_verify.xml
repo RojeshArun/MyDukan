@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="org.app.mydukan.activities.MobNumVerifyActivity"
+    tools:showIn="@layout/activity_mob_num_verify"
+    >
+
+    <LinearLayout
+        android:id="@+id/verifyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="  MyDukan"
+            android:textColor="@color/authui_colorAccent"
+            android:textSize="24sp" />
+
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="  Verify Your Mobile Number "
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/verifyLayout"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <!-- Phone Number -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textlayout1"
+            android:visibility="invisible"
+           >
+
+            <EditText
+                android:id="@+id/phoneNumberID"
+                style="@style/normalTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_number"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:visibility="gone"
+                android:nextFocusForward="@+id/pincode"
+                android:textColorHint="@color/colorTextSecondary"
+                android:textSize="@dimen/mediumtextSize" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <!--Digit authentication button-->
+
+
+        <Button
+            android:id="@+id/validatedbtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:text="Verify"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/textlayout1"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:textAllCaps="true"
+            android:visibility="visible"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+        <com.digits.sdk.android.DigitsAuthButton
+            android:id="@+id/auth_button1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:layout_below="@id/textlayout1"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:textAllCaps="true"
+            android:visibility="visible"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

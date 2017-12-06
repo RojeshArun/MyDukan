@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_generate_qrcode"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="org.app.mydukan.activities.GenerateQRCodeActivity">
+
+    <FrameLayout
+        android:id="@+id/linearLayout_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical"
+        android:background="@drawable/bg_border_rectangle"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/linearLayout_Buttons">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+
+            <View
+                android:layout_below="@+id/latout_mydhukahan"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@android:color/holo_orange_dark"
+                android:id="@+id/view" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/view"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:weightSum="10"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/layoutshop_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4.8"
+                    android:visibility="visible">
+                <ImageView
+                    android:id="@+id/img_ShopImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/img_holder"
+                    android:scaleType="fitXY"
+                    tools:ignore="ContentDescription" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_idcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5.5">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/relativeLayout"
+                    android:layout_margin="@dimen/card_padding"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center_vertical"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:fontFamily="serif"
+                        android:id="@+id/tv_UserName"
+                        android:layout_marginTop="@dimen/divider_height"
+                        android:layout_marginBottom="@dimen/divider_height"
+                        android:textSize="@dimen/microtextSize"
+                        android:textStyle="normal|bold"
+                        android:layout_toLeftOf="@+id/img_QRcode"
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_UserAddress"
+                        android:layout_gravity="center_vertical"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:fontFamily="serif"
+                        android:textSize="@dimen/microtextSize"
+                        android:layout_below="@+id/tv_UserName"
+                        android:layout_marginTop="@dimen/divider_height"
+                        android:layout_marginBottom="@dimen/divider_height"
+                        android:textStyle="normal|bold"
+                        android:layout_toLeftOf="@+id/img_QRcode"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        tools:ignore="RtlHardcoded" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_UserPhoneNumber"
+                        android:layout_below="@+id/tv_UserAddress"
+                        android:layout_gravity="center_vertical"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:fontFamily="serif"
+                        android:textSize="@dimen/microtextSize"
+                        android:layout_marginTop="@dimen/divider_height"
+                        android:layout_marginBottom="@dimen/divider_height"
+                        android:textStyle="normal|bold"
+                        android:layout_alignRight="@+id/tv_UserAddress"
+                        android:layout_alignEnd="@+id/tv_UserAddress"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:scaleType="fitXY"
+                        android:layout_margin="5dp"
+                        android:padding="2dp"
+                        android:background="@drawable/bg_border_rectangle"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:id="@+id/img_QRcode"
+                        tools:ignore="ContentDescription" />
+
+                </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/latout_mydhukahan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_launcher"
+                    tools:ignore="ContentDescription"
+                    android:id="@+id/imageView2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MyDukan"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/largetextSize"
+                    android:textStyle="bold"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageView2"
+                    android:layout_toEndOf="@+id/imageView2"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginStart="11dp"
+                    tools:ignore="HardcodedText" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="right|center_vertical"
+        android:layout_gravity="bottom"
+        android:id="@+id/linearLayout_Buttons"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:weightSum="3"
+        android:background="@color/com_facebook_button_background_color_disabled"
+        android:layout_alignParentStart="true"
+        tools:ignore="RtlHardcoded">
+        <Button
+            android:id="@+id/editProfile_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:textColor="?android:attr/textColorPrimary"
+            android:layout_weight="1"
+            android:textSize="@dimen/labels_text_size"
+            android:background="@color/com_facebook_button_background_color_disabled"
+            android:text="@string/edit_profile_btn"
+            tools:ignore="ButtonStyle,HardcodedText"
+            android:textStyle="normal|bold" />
+            <Button
+                android:id="@+id/save_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible"
+                android:text="@string/save_image_btn"
+                android:textSize="@dimen/labels_text_size"
+                android:layout_weight="1"
+                android:textStyle="normal|bold"
+                android:background="@color/com_facebook_button_background_color_disabled"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:id="@+id/next_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/next_btn"
+                android:textSize="@dimen/labels_text_size"
+                android:textColor="?android:attr/textColorPrimary"
+                android:layout_weight="1"
+                android:background="@color/com_facebook_button_background_color_disabled"
+                tools:ignore="ButtonStyle,HardcodedText"
+                android:textStyle="normal|bold" />
+        </LinearLayout>
+
+
+</RelativeLayout>

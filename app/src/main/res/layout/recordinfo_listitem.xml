@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recorditem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cast_expanded_controller_seek_bar_progress_background_tint_color">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/cardview_greenList">
+
+            <LinearLayout
+                android:id="@+id/buttonLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/deleteBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:text="@string/delete" />
+
+                <Button
+                    android:id="@+id/updateBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:text="@string/update" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/buttonLayout"
+                android:layout_toStartOf="@+id/buttonLayout"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/recordStatus"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/smalltextSize"
+                    android:textStyle="normal|bold"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/card_padding"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="IMEI Number: "
+                        android:textSize="@dimen/smalltextSize"
+                        android:textStyle="normal|bold"
+                        android:id="@+id/textView3" />
+
+                    <TextView
+                        android:id="@+id/imei"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_DateColor"
+                        android:textSize="@dimen/smalltextSize"
+                        android:textStyle="normal|bold" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/card_padding"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Price: "
+                        android:textSize="@dimen/smalltextSize"
+                        android:textStyle="normal|bold" />
+
+                    <TextView
+                        android:id="@+id/amount"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/smalltextSize"
+                        android:textStyle="normal|bold" />
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/statusSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/listrow_topmargin"
+                    android:layout_marginTop="@dimen/listrow_topmargin"
+                    android:layout_toLeftOf="@+id/buttonLayout"
+                    android:visibility="gone"
+                    />
+
+                <CheckBox
+                    android:id="@+id/checkBox1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/button"
+                    android:layout_centerHorizontal="true"
+                    android:text="Settled by Distributor" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

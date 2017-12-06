@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_background"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark" />
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/notificationtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/listrow_topmargin"
+            android:text="Notification text. : #"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/mediumtextSize"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/divider_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/listrow_topmargin_multiline"
+            android:background="@color/separator_color" />
+
+        <TextView
+            android:id="@+id/supplierName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/listrow_topmargin_multiline"
+            android:text="Supplier name : "
+            android:textColor="@color/text_muted_color"
+            android:textSize="@dimen/smalltextSize" />
+
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/divider_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/listrow_topmargin_multiline"
+            android:background="@color/separator_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/listrow_topmargin_multiline"
+            android:text="Message : "
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/smalltextSize" />
+
+        <WebView
+            android:id="@+id/description"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="2dp"
+            android:text="Notification description ..." />
+
+    </LinearLayout>
+
+
+</LinearLayout>

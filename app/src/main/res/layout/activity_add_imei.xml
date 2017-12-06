@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_imei"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="org.app.mydukan.activities.AddIMEIActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/modelName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2sp"
+            android:paddingStart="2sp"
+            android:text="Add IMEI Number"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/mediumtextSize"
+            android:textStyle="normal|bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin">
+
+            <LinearLayout
+                android:id="@+id/layoutBarcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btn_scannerIMEI"
+                    android:layout_width="58dp"
+                    android:layout_height="38dp"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/ic_barcode_scanner_icon"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Scan Barcode"
+                    android:textSize="@dimen/nanotextSize"
+                    android:textStyle="normal|bold"
+                    />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/tv_IMEINum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/layoutBarcode"
+                android:layout_toStartOf="@+id/layoutBarcode"
+                android:gravity="center_vertical"
+                android:hint="IMEI"
+                android:paddingLeft="2sp"
+                android:paddingStart="2sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin">
+
+            <Button
+                android:id="@+id/btn_No"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="No"
+                android:textColor="@color/primary_text" />
+
+            <Button
+                android:id="@+id/btn_Yes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Yes"
+                android:textColor="@color/green_500" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,206 @@
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /Users/vaibhavkumar/Library/Android/sdk/ndk-bundle.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+NDK is missing a "platforms" directory.
+If you are using NDK, verify the ndk.dir is set to a valid NDK directory.  It is currently set to /Users/vaibhavkumar/Library/Android/sdk/ndk-bundle.
+If you are not using NDK, unset the NDK variable from ANDROID_NDK_HOME or local.properties to remove this warning.
+
+Incremental java compilation is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAnimatedVectorDrawable2531Library
+:app:prepareComAndroidSupportAppcompatV72531Library
+:app:prepareComAndroidSupportCardviewV72531Library
+:app:prepareComAndroidSupportConstraintConstraintLayout102Library
+:app:prepareComAndroidSupportCustomtabs2510Library
+:app:prepareComAndroidSupportDesign2531Library
+:app:prepareComAndroidSupportMediarouterV72400Library
+:app:preDebugAndroidTestBuild UP-TO-DATE
+:app:prepareComAndroidSupportMultidex101Library
+:app:prepareComAndroidSupportPaletteV72510Library
+:app:prepareComAndroidSupportRecyclerviewV72531Library
+:app:prepareComAndroidSupportSupportCompat2531Library
+:app:prepareComAndroidSupportSupportCoreUi2531Library
+:app:prepareComAndroidSupportSupportCoreUtils2531Library
+:app:prepareComAndroidSupportSupportFragment2531Library
+:app:prepareComAndroidSupportSupportMediaCompat2531Library
+:app:prepareComAndroidSupportSupportV42531Library
+:app:prepareComAndroidSupportSupportVectorDrawable2531Library
+:app:prepareComAndroidSupportTransition2531Library
+:app:prepareComAndroidVolleyVolley100Library
+:app:prepareComClevertapAndroidClevertapAndroidSdk312Library
+:app:prepareComCrashlyticsSdkAndroidAnswers1310Library
+:app:prepareComCrashlyticsSdkAndroidAnswersShim004Library
+:app:prepareComCrashlyticsSdkAndroidBeta122Library
+:app:prepareComCrashlyticsSdkAndroidCrashlytics265Library
+:app:prepareComCrashlyticsSdkAndroidCrashlyticsCore2314Library
+:app:prepareComDigitsSdkAndroidDigits202Library
+:app:prepareComFacebookAndroidFacebookAndroidSdk4180Library
+:app:prepareComFacebookFrescoAnimatedBase0120Library
+:app:prepareComFacebookFrescoAnimatedGif0120Library
+:app:prepareComFacebookFrescoDrawee0120Library
+:app:prepareComFacebookFrescoFbcore0120Library
+:app:prepareComFacebookFrescoFresco0120Library
+:app:prepareComFacebookFrescoImagepipeline0120Library
+:app:prepareComFacebookFrescoImagepipelineBase0120Library
+:app:prepareComFirebaseuiFirebaseUi111Library
+:app:prepareComFirebaseuiFirebaseUiAuth111Library
+:app:prepareComFirebaseuiFirebaseUiDatabase111Library
+:app:prepareComFirebaseuiFirebaseUiStorage111Library
+:app:prepareComGithubAmlcurranShowcaseviewLibrary543Library
+:app:prepareComGithubChampionswimmerAndroidSocialButtons10Library
+:app:prepareComGithubClansFab164Library
+:app:prepareComGithubDeano2390MaterialShowcaseView110Library
+:app:prepareComGithubJakeWhartonViewPagerIndicator241Library
+:app:prepareComGithubWooplrSpotlight123Library
+:app:prepareComGoogleAndroidGmsPlayServices1001Library
+:app:prepareComGoogleAndroidGmsPlayServicesAds1001Library
+:app:prepareComGoogleAndroidGmsPlayServicesAdsLite1001Library
+:app:prepareComGoogleAndroidGmsPlayServicesAnalytics1001Library
+:app:prepareComGoogleAndroidGmsPlayServicesAnalyticsImpl1001Library
+:app:prepareComGoogleAndroidGmsPlayServicesAppinvite1001Library
+:app:prepareComGoogleAndroidGmsPlayServicesAuth1001Library
+:app:prepareComGoogleAndroidGmsPlayServicesAuthBase1001Library
+:app:prepareComGoogleAndroidGmsPlayServicesAwareness1001Library
+:app:prepareComGoogleAndroidGmsPlayServicesBase1001Library
+:app:prepareComGoogleAndroidGmsPlayServicesBasement1001Library
+:app:prepareComGoogleAndroidGmsPlayServicesCast1001Library
+:app:prepareComGoogleAndroidGmsPlayServicesCastFramework1001Library
+:app:prepareComGoogleAndroidGmsPlayServicesClearcut1001Library
+:app:prepareComGoogleAndroidGmsPlayServicesDrive1001Library
+:app:prepareComGoogleAndroidGmsPlayServicesFitness1001Library
+:app:prepareComGoogleAndroidGmsPlayServicesGames1001Library
+:app:prepareComGoogleAndroidGmsPlayServicesGass1001Library
+:app:prepareComGoogleAndroidGmsPlayServicesGcm1001Library
+:app:prepareComGoogleAndroidGmsPlayServicesIdentity1001Library
+:app:prepareComGoogleAndroidGmsPlayServicesIid1001Library
+:app:prepareComGoogleAndroidGmsPlayServicesInstantapps1001Library
+:app:prepareComGoogleAndroidGmsPlayServicesLocation1001Library
+:app:prepareComGoogleAndroidGmsPlayServicesMaps1001Library
+:app:prepareComGoogleAndroidGmsPlayServicesNearby1001Library
+:app:prepareComGoogleAndroidGmsPlayServicesPanorama1001Library
+:app:prepareComGoogleAndroidGmsPlayServicesPlaces1001Library
+:app:prepareComGoogleAndroidGmsPlayServicesPlus1001Library
+:app:prepareComGoogleAndroidGmsPlayServicesSafetynet1001Library
+:app:prepareComGoogleAndroidGmsPlayServicesTagmanager1001Library
+:app:prepareComGoogleAndroidGmsPlayServicesTagmanagerApi1001Library
+:app:prepareComGoogleAndroidGmsPlayServicesTagmanagerV4Impl1001Library
+:app:prepareComGoogleAndroidGmsPlayServicesTasks1001Library
+:app:prepareComGoogleAndroidGmsPlayServicesVision1001Library
+:app:prepareComGoogleAndroidGmsPlayServicesWallet1001Library
+:app:prepareComGoogleAndroidGmsPlayServicesWearable1001Library
+:app:prepareComGoogleFirebaseFirebaseAds1001Library
+:app:prepareComGoogleFirebaseFirebaseAnalytics1001Library
+:app:prepareComGoogleFirebaseFirebaseAnalyticsImpl1001Library
+:app:prepareComGoogleFirebaseFirebaseAppindexing1001Library
+:app:prepareComGoogleFirebaseFirebaseAuth1001Library
+:app:prepareComGoogleFirebaseFirebaseCommon1001Library
+:app:prepareComGoogleFirebaseFirebaseConfig1001Library
+:app:prepareComGoogleFirebaseFirebaseCore1001Library
+:app:prepareComGoogleFirebaseFirebaseCrash1001Library
+:app:prepareComGoogleFirebaseFirebaseDatabase1001Library
+:app:prepareComGoogleFirebaseFirebaseDatabaseConnection1001Library
+:app:prepareComGoogleFirebaseFirebaseIid1001Library
+:app:prepareComGoogleFirebaseFirebaseInvites1001Library
+:app:prepareComGoogleFirebaseFirebaseMessaging1001Library
+:app:prepareComGoogleFirebaseFirebaseStorage1001Library
+:app:prepareComGoogleFirebaseFirebaseStorageCommon1001Library
+:app:prepareComJourneyappsZxingAndroidEmbedded340Library
+:app:prepareComJraskaFalcon104Library
+:app:prepareComMelnykovFloatingactionbutton130Library
+:app:prepareComMoengageMoeAndroidSdk7703Library
+:app:prepareComMoengageMoeInappLib1301Library
+:app:prepareComMoengageMoeLocationLib3009Library
+:app:prepareComMoengageMoePushBase1307Library
+:app:prepareComMoengageMoePushFirebase1101Library
+:app:prepareComMoengageMoePushGcm1201Library
+:app:prepareComMoengageMoengageSegmentIntegration2000Library
+:app:prepareComSandriosAndroidSandriosCamera109Library
+:app:prepareComTwitterSdkAndroidTweetComposer230Library
+:app:prepareComTwitterSdkAndroidTweetUi230Library
+:app:prepareComTwitterSdkAndroidTwitter230Library
+:app:prepareComTwitterSdkAndroidTwitterCore230Library
+:app:prepareComYalantisUcrop220Library
+:app:prepareGun0912TedTedpermission102Library
+:app:prepareIoFabricSdkAndroidFabric1314Library
+:app:prepareMeRelexCircleindicator121Library
+:app:prepareNetGotevUploadservice21Library
+:fonePaisaSDK:preBuild UP-TO-DATE
+:fonePaisaSDK:preReleaseBuild UP-TO-DATE
+:fonePaisaSDK:checkReleaseManifest
+:fonePaisaSDK:preDebugAndroidTestBuild UP-TO-DATE
+:fonePaisaSDK:preDebugBuild UP-TO-DATE
+:fonePaisaSDK:preDebugUnitTestBuild UP-TO-DATE
+:fonePaisaSDK:preReleaseUnitTestBuild UP-TO-DATE
+:fonePaisaSDK:prepareComAndroidSupportAnimatedVectorDrawable2531Library
+:fonePaisaSDK:prepareComAndroidSupportAppcompatV72531Library
+:fonePaisaSDK:prepareComAndroidSupportMultidex101Library
+:fonePaisaSDK:prepareComAndroidSupportSupportCompat2531Library
+:fonePaisaSDK:prepareComAndroidSupportSupportCoreUi2531Library
+:fonePaisaSDK:prepareComAndroidSupportSupportCoreUtils2531Library
+:fonePaisaSDK:prepareComAndroidSupportSupportFragment2531Library
+:fonePaisaSDK:prepareComAndroidSupportSupportMediaCompat2531Library
+:fonePaisaSDK:prepareComAndroidSupportSupportV42531Library
+:fonePaisaSDK:prepareComAndroidSupportSupportVectorDrawable2531Library
+:fonePaisaSDK:prepareReleaseDependencies
+:fonePaisaSDK:compileReleaseAidl UP-TO-DATE
+:fonePaisaSDK:compileReleaseNdk UP-TO-DATE
+:fonePaisaSDK:compileLint UP-TO-DATE
+:fonePaisaSDK:copyReleaseLint UP-TO-DATE
+:fonePaisaSDK:compileReleaseRenderscript UP-TO-DATE
+:fonePaisaSDK:generateReleaseBuildConfig UP-TO-DATE
+:fonePaisaSDK:generateReleaseResValues UP-TO-DATE
+:fonePaisaSDK:generateReleaseResources UP-TO-DATE
+:fonePaisaSDK:mergeReleaseResources UP-TO-DATE
+:fonePaisaSDK:processReleaseManifest UP-TO-DATE
+:fonePaisaSDK:processReleaseResources UP-TO-DATE
+:fonePaisaSDK:generateReleaseSources UP-TO-DATE
+:fonePaisaSDK:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:fonePaisaSDK:javaPreCompileRelease
+:fonePaisaSDK:compileReleaseJavaWithJavac UP-TO-DATE
+:fonePaisaSDK:extractReleaseAnnotations UP-TO-DATE
+:fonePaisaSDK:mergeReleaseShaders UP-TO-DATE
+:fonePaisaSDK:compileReleaseShaders UP-TO-DATE
+:fonePaisaSDK:generateReleaseAssets UP-TO-DATE
+:fonePaisaSDK:mergeReleaseAssets UP-TO-DATE
+:fonePaisaSDK:mergeReleaseProguardFiles UP-TO-DATE
+:fonePaisaSDK:packageReleaseRenderscript UP-TO-DATE
+:fonePaisaSDK:packageReleaseResources UP-TO-DATE
+:fonePaisaSDK:processReleaseJavaRes UP-TO-DATE
+:fonePaisaSDK:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:fonePaisaSDK:transformClassesAndResourcesWithSyncLibJarsForRelease UP-TO-DATE
+:fonePaisaSDK:mergeReleaseJniLibFolders UP-TO-DATE
+:fonePaisaSDK:transformNativeLibsWithMergeJniLibsForRelease UP-TO-DATE
+:fonePaisaSDK:transformNativeLibsWithSyncJniLibsForRelease UP-TO-DATE
+:fonePaisaSDK:bundleRelease UP-TO-DATE
+:app:prepareDebugDependencies
+:app:compileDebugAidl UP-TO-DATE
+:app:compileDebugRenderscript UP-TO-DATE
+:app:generateDebugBuildConfig UP-TO-DATE
+:app:mergeDebugShaders UP-TO-DATE
+:app:compileDebugShaders UP-TO-DATE
+:app:generateDebugAssets UP-TO-DATE
+:app:mergeDebugAssets UP-TO-DATE
+:app:processDebugGoogleServices
+Parsing json file: /Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/google-services.json
+:app:processDebugManifest
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/src/main/AndroidManifest.xml:15:5-67 Warning:
+	Element uses-permission#android.permission.INTERNET at AndroidManifest.xml:15:5-67 duplicated with element declared at AndroidManifest.xml:6:5-67
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/src/main/AndroidManifest.xml:16:5-81 Warning:
+	Element uses-permission#android.permission.WRITE_EXTERNAL_STORAGE at AndroidManifest.xml:16:5-81 duplicated with element declared at AndroidManifest.xml:13:5-81
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/src/main/AndroidManifest.xml:18:5-79 Warning:
+	Element uses-permission#android.permission.ACCESS_FINE_LOCATION at AndroidManifest.xml:18:5-79 duplicated with element declared at AndroidManifest.xml:14:5-79
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/src/main/AndroidManifest.xml:35:5-79 Warning:
+	Element uses-permission#android.permission.ACCESS_FINE_LOCATION at AndroidManifest.xml:35:5-79 duplicated with element declared at AndroidManifest.xml:18:5-79
+:app:fabricGenerateResourcesDebug
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugResources FAILED
+
+BUILD FAILED
+
+Total time: 18.447 secs

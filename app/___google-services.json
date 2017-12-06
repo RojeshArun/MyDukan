@@ -1,0 +1,71 @@
+{
+  "project_info": {
+    "project_number": "406311197155",
+    "firebase_url": "https://mydukan-development.firebaseio.com",
+    "project_id": "mydukan-development",
+    "storage_bucket": "mydukan-development.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:406311197155:android:b57f1289bcb65e9a",
+        "android_client_info": {
+          "package_name": "org.app.mydukan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "406311197155-6si8icprihd93sln3eqlcnikq5hdlfs1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.app.mydukan",
+            "certificate_hash": "6B49B6697D0A8B6E35E7832D642DB43C2265A009"
+          }
+        },
+        {
+          "client_id": "406311197155-bgisa2d87j9e0ohvlca6q9gpqi08vtd8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.app.mydukan",
+            "certificate_hash": "33CAB19BDB0100070DD9DC53CF258E51E9A8C544"
+          }
+        },
+        {
+          "client_id": "406311197155-113pm4vmtoj5rvuqdbg6i7m8rhg948nv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.app.mydukan",
+            "certificate_hash": "7797A21BD2FC6808E515F41F702BC22B788CE27C"
+          }
+        },
+        {
+          "client_id": "406311197155-ot34efdetnuivjrfdhlmn8utaqn3gr46.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANVB3NBmNTtBhDAhVhItaDpM1opa2TENc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "406311197155-ot34efdetnuivjrfdhlmn8utaqn3gr46.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

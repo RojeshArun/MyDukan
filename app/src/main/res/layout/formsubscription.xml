@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/layout_subscribe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="15dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageDialog_1"
+                android:layout_width="35dp"
+                android:layout_height="45dp"
+                android:paddingTop="5dp"
+                android:layout_alignEnd="@+id/textView4"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/textView4"
+                android:src="@mipmap/ic_launcher"
+                tools:ignore="ContentDescription,ObsoleteLayoutParam,RtlHardcoded" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageDialog"
+                android:text="BE A PRIME MEMBER \nOF MyDukan."
+                android:textColor="@color/white"
+                android:textSize="@dimen/largertextSizes"
+                android:textStyle="normal|bold"
+                tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageDialog"
+                android:text="Only for Retailers/Distributors/Company Personnel."
+                android:textColor="@color/white"
+                android:textSize="@dimen/microtextSize"
+                tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:scrollbars="none"
+            android:layout_marginBottom="10dp"
+            tools:ignore="UselessParent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="ObsoleteLayoutParam,UselessParent"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageDialog"
+                    android:text="Dear User,"
+                    android:textColor="@color/text_color"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/mediumtextSize_1"
+                    tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageDialog"
+                    android:text="Your FREE trial subscription will expire in 7 days. We recommend you to be our PRIME member to get:"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/microtextSize"
+                    android:layout_marginTop="10dp"
+                    tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="9dp"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="2dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/circle"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_below="@+id/imageDialog"
+                        android:text="DP/Detailed Specifications of Handset Models of Leading Brands"
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/microtextSize"
+                        tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="9dp"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="2dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/circle"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_below="@+id/imageDialog"
+                        android:text="PRICE DROP and SCHEMES alert"
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/microtextSize"
+                        tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="9dp"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="2dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/circle"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_below="@+id/imageDialog"
+                        android:text="NEW LAUNCH alerts"
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/microtextSize"
+                        tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="9dp"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="2dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/circle"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_below="@+id/imageDialog"
+                        android:text="Records of storing IMEI and Enrolled Schemes"
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/microtextSize"
+                        tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="9dp"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="2dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/circle"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_below="@+id/imageDialog"
+                        android:text="App Notifications and much more.."
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/microtextSize"
+                        tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:id="@+id/tv_message_trialUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/btn_subscription"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:textColor="@color/bodyTextColor"
+                        android:textStyle="normal|bold"
+                        android:visibility="gone"
+                        tools:ignore="ObsoleteLayoutParam" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btn_remaingDays"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_weight="1"
+                            android:layout_marginRight="20dp"
+                            android:textColor="@color/white"
+                            android:background="@color/colorDivider"
+                            android:padding="5dp"
+                            android:text="Click for free"
+                            android:textStyle="normal"
+                            android:visibility="gone"
+                            tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+                        <Button
+                            android:id="@+id/btn_subscription"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_weight="1"
+                            android:background="#4285F4"
+                            android:maxLines="1"
+                            android:padding="5dp"
+                            android:text="Pay Now"
+                            android:textColor="@color/white"
+                            android:textStyle="normal|bold"
+                            tools:ignore="HardcodedText,ObsoleteLayoutParam,TextViewEdits" />
+
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/btn_trial"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_message_trialUser"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:layout_margin="6dp"
+                        android:padding="6dp"
+                        android:text="Click for FREE TRIAL"
+                        android:textColor="@color/black"
+                        android:textStyle="normal"
+                        android:visibility="visible"
+                        tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/whatsAppBtn_payment"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="10dp"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginStart="@dimen/activity_horizontal_margin"
+                        android:src="@drawable/ic_action_whatsapp"
+                        app:backgroundTint="@color/green_500"
+                        android:visibility="gone"
+                        app:borderWidth="0dp"
+                        tools:ignore="ObsoleteLayoutParam,RtlHardcoded" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_below="@+id/imageDialog"
+                        android:text="You can also pay via :"
+                        android:textColor="@color/text_color"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/microtextSize"
+                        tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_below="@+id/imageDialog"
+                        android:text="Paytm or UPI to 9036770772"
+                        android:textColor="@color/text_color"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/smalltextSize"
+                        tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+                    <TextView
+                        android:id="@+id/tv_message_whatsapp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Any Issue? Whatsapp us on 9036770772"
+                        android:textSize="@dimen/microtextSize"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text=" Lets FIND A MOBILE..."
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/FilterBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:drawableLeft="@drawable/ic_filter_24"
+            android:background="@color/blue"
+            android:layout_margin="10dp"
+            android:text="Filter"
+
+            android:textColor="#FFFFFF"
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollViewList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+           <!-- <android.support.v7.widget.CardView
+                android:id="@+id/card_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:visibility="gone"
+                android:elevation="2dp">
+
+                <LinearLayout
+                    android:id="@+id/filters"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:orientation="vertical"
+                    android:padding="10dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:text=" Lets FIND A MOBILE..."
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_dialog"
+                            android:orientation="vertical"
+                            android:padding="1dp">
+                            &lt;!&ndash; Text Label &ndash;&gt;
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:text="Select Category:"
+                                android:textColor="@color/orange_one" />
+                            &lt;!&ndash; Spinner Element &ndash;&gt;
+                            <Spinner
+                                android:id="@+id/categ"
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:prompt="@string/app_name" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_dialog"
+                            android:orientation="vertical"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:id="@+id/textView9"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:fontFamily="sans-serif"
+                                android:text="Select DP/MOP:"
+                                android:textColor="@color/orange_one" />
+
+                            &lt;!&ndash; Spinner Element &ndash;&gt;
+                            <Spinner
+                                android:id="@+id/pricetype"
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:prompt="@string/app_name" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Price Range:"
+                        android:textColor="@color/orange_one" />
+
+                    <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+                        android:id="@+id/rangeSeekbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/filters"
+                        app:bar_color="#D8D8D8"
+                        app:bar_highlight_color="#66000000"
+                        app:corner_radius="2"
+                        app:data_type="_integer"
+                        app:gap="1000"
+                        app:left_thumb_color="#E65100"
+                        app:left_thumb_color_pressed="#FF5722"
+                        app:max_value="25500"
+                        app:min_value="500"
+                        app:right_thumb_color="#E65100"
+                        app:right_thumb_color_pressed="#FF5722"
+                        app:steps="500" />
+
+                    <RelativeLayout
+                        android:id="@+id/values"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/rangeSeekbar"
+                        android:padding="10dip">
+
+                        <TextView
+                            android:id="@+id/minVal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:textColor="@color/colorTextPrimary" />
+
+                        <TextView
+                            android:id="@+id/maxVal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:textColor="@color/colorTextPrimary" />
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/findcat"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_below="@id/values"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/orange_one"
+                        android:fontFamily="sans-serif"
+                        android:text="Apply"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/mediumtextSize"
+                        android:textStyle="normal" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>-->
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/card_one"
+                android:layout_marginTop="3dp"
+                android:background="@android:color/darker_gray" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider"
+                android:layout_centerHorizontal="true"
+                android:nestedScrollingEnabled="false"
+                android:paddingBottom="65dp"
+                android:scrollbars="vertical"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/nodata_view"
+        style="@style/normalTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:gravity="center"
+        android:text="@string/no_data"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="@dimen/mediumtextSize"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

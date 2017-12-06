@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layoutButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="2dp"
+        tools:ignore="DisableBaselineAlignment">
+
+        <LinearLayout
+            android:id="@+id/whatsapp_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_margin="1dp"
+            android:background="@color/new_btn_blue"
+            android:gravity="center_horizontal"
+            android:visibility="gone"
+            android:padding="2dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_action_whatsapp"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Whatsapp"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginTop="6dp"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/records_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_margin="1dp"
+            android:background="@color/new_btn_blue"
+            android:gravity="center_horizontal"
+            android:padding="2dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_records_white_24dp"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Records"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginTop="6dp"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/servicecenter_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@color/new_btn_blue"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="2dp"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_service_center_white"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="ServiceCenters"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/mynetwork_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_margin="1dp"
+            android:background="@color/new_btn_blue"
+            android:gravity="center_horizontal"
+            android:padding="2dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_network_64"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Network"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginTop="6dp"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/askRaju_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_margin="1dp"
+            android:visibility="visible"
+            android:background="@color/new_btn_blue"
+            android:gravity="center_horizontal"
+            android:padding="2dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_chat_ask_raju"
+                tools:ignore="ContentDescription" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ask Raju"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginTop="6dp"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp">
+        <TextView
+            android:id="@+id/tv_SubscriptionDueDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:fontFamily="serif"
+            android:textAllCaps="false"
+            android:textColor="@color/errorColor"
+            android:textSize="@dimen/microtextSize"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+       <!-- <ViewFlipper
+            android:id="@+id/flipper_promotional"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:flipInterval="3000"
+            android:visibility="gone"
+            android:layout_marginTop="1dp"
+            >
+            <ImageView
+                android:id="@+id/bannerSlide1"
+                android:src="@drawable/slide1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="Image1"
+                android:layout_gravity="center_horizontal"
+                tools:ignore="HardcodedText" />
+
+            <ImageView
+                android:src="@drawable/slide2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="Image2"
+                android:layout_gravity="center_horizontal"
+                tools:ignore="HardcodedText" />
+
+            <ImageView
+                android:src="@drawable/slide3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="Image3"
+                android:layout_gravity="center_horizontal"
+                tools:ignore="HardcodedText" />
+
+            <ImageView
+                android:src="@drawable/slide4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="Image4"
+                android:layout_gravity="center_horizontal"
+                tools:ignore="HardcodedText" />
+
+            <ImageView
+                android:src="@drawable/slide5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="Image5"
+                android:layout_gravity="center_horizontal"
+                tools:ignore="HardcodedText" />
+
+        </ViewFlipper>-->
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#e3222222</color>
+    <!--
+       <color name="colorPrimaryDark">#400000</color>
+       <color name="colorPrimary">#ac4747</color>
+       <color name="colorAccent">#ffc929</color>
+        <color name="colorAccent">#FF4081</color>//pink
+   -->
+    <color name="app_colorPrimaryDark">#400000</color>
+    <color name="app_colorAccent">#ffc929</color>
+    <color name="app_colorAccent_light">#dcFFF59D</color>
+    <color name="googlered">#dd4b39</color>
+    <color name="orange">#FF5722</color>
+
+    <color name="authui_colorAccent">#3E50B4</color>
+    <color name="authui_colorActivated">#1a237e</color>
+    <color name="authui_colorPrimary">#3E50B4</color>
+    <color name="authui_colorPrimaryDark">#2F3E9E</color>
+    <color name="com_facebook_blue">#3B5998</color>
+    <color name="com_facebook_button_background_color">#415dae</color>
+    <color name="com_facebook_button_background_color_disabled">#bdc1c9</color>
+    <color name="com_facebook_button_background_color_focused">#FFFFFe</color>
+    <color name="com_facebook_button_background_color_focused_disabled">#84878c</color>
+    <color name="com_facebook_button_background_color_pressed">#2f477a</color>
+    <color name="com_facebook_button_background_color_selected">#7c8fc8</color>
+
+
+    <color name="bodyTextColor">#c0000000</color>
+    <color name="buttonColor">#3E50B4</color>
+    <color name="buttonColorPressed">#1a237e</color>
+    <color name="buttonTextColor">#FFFFFF</color>
+    <color name="errorColor">#DD2C00</color>
+    <color name="headingColor">#212121</color>
+
+
+    <color name="background_color">#009688</color>
+    <color name="black">#000000</color>
+    <color name="white_greyish">#EEEEEE</color>
+    <color name="button_selectorcolor">#9E9E9E</color>
+
+    <color name="orange_one">#E65100</color>
+    <color name="orange_two">#FF8F00</color>
+    <color name="orange_three">#FFAB40</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="dark_textcolor">#4a4a4a</color>
+    <color name="colorTextSecondary">#9b9b9b</color>
+    <color name="colorTextPrimary">#4a4a4a</color>
+    <color name="screen_background">#ffffff</color>
+    <color name="separator_color">#D8D8D8</color>
+    <color name="colorBtnBackground">#ae5500</color>
+    <color name="screenBackground">#FFFFFF</color>
+    <color name="green_500">#4caf50</color>
+    <color name="listviewbackground">#FFFFFF</color>
+    <color name="text_color">#222222</color>
+    <color name="text_muted_color">#9B9B9B</color>
+    <color name="buttontext">#FFFFFF</color>
+    <color name="text_DateColor">#004d40</color>
+
+    <color name="colorDivider">#979797</color>
+    <color name="listviewdivider">#B6B6B6</color>
+
+    <color name="textColorPrimary">#ffffff</color>
+    <color name="lightgrey">#f5f5f5</color>
+    <color name="colorPrimaryLight">#B3E5FC</color>
+    <color name="grey">#B0B0B0</color>
+
+    <!--labels    -->
+    <color name="date_time_color">#cd004d40</color>
+
+    <color name="primary">#795548</color>
+    <color name="primary_text">#212121</color>
+    <color name="black_overlay">#66000000</color>
+
+
+    <color name="cardview_green">#009688</color>
+    <color name="cardview_greenList">#E0F2F1</color>
+
+   <!-- New design blue color  -->
+    <color name="new_btn_blue">#4285F4</color>
+    <color name="new_btn_blue_baground">#EEEEEE</color>
+
+</resources>

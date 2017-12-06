@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context="org.app.mydukan.activities.UsersLocationAddress">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="Hello, "
+                android:textColor="#4285F4"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="User"
+                android:textColor="#4285F4"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="Please add your Location Details."
+            android:textColor="@color/text_color"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_weight="1"
+                android:text="Your Location "
+                android:textColor="#4285F4"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/BtnChangeLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginTop="25dp"
+                android:background="#4285F4"
+                android:drawableLeft="@drawable/ic_map_icon"
+                android:padding="10dp"
+                android:text="Edit Location"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/fullAddress"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="30dp"
+            android:background="@android:color/transparent"
+            android:gravity="top"
+            android:hint="Full Address"
+            android:maxLines="3"
+            android:paddingBottom="2dp"
+            android:paddingTop="4dp"
+            android:textColor="@color/text_color"
+            android:textColorHint="#ababab"
+            android:textSize="18sp"
+            android:visibility="visible"
+            />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3px"
+            android:background="@color/cardview_green" />
+
+        <EditText
+            android:id="@+id/userArea"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:hint="Street Area"
+            android:maxLines="1"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:singleLine="true"
+            android:textColor="@color/text_color"
+            android:textColorHint="#ababab"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3px"
+            android:background="@color/cardview_green"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/userCity"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:hint="City"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/text_color"
+            android:textColorHint="#ababab"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="3px"
+            android:background="@color/cardview_green"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <EditText
+                android:id="@+id/userPincode"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:editable="false"
+                android:gravity="center_vertical"
+                android:hint="Pincode"
+                android:maxLines="1"
+                android:paddingBottom="2dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:textColor="@color/text_color"
+                android:textColorHint="#ababab"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="3px"
+                android:layout_below="@id/userPincode"
+                android:background="@color/cardview_green" />
+
+            <EditText
+                android:id="@+id/userState"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/transparent"
+                android:editable="false"
+                android:gravity="center_vertical"
+                android:hint="State"
+                android:maxLines="1"
+                android:paddingBottom="2dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:textColor="@color/text_color"
+                android:textColorHint="#ababab"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="150dp"
+                android:layout_height="3px"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/userState"
+                android:background="@color/cardview_green" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="2dp"
+            android:text="If you want to change the location, Click Here"
+            android:textColor="@color/text_color"
+            android:textSize="13sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="26dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/terms_conditions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/text_color"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:id="@+id/termsandconditionLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/termsandcondition_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="I am Accepting the "
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/privacyPolicyView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_toRightOf="@id/termsandcondition_text1"
+                    android:text="Privacy Policy"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/termsandcondition_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_toRightOf="@id/privacyPolicyView"
+                    android:text=","
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/termsandconditionView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/termsandcondition_text1"
+                    android:layout_marginTop="4dp"
+                    android:text="Terms and Conditions"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/termsandcondition_text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/termsandcondition_text1"
+                    android:layout_marginTop="4dp"
+                    android:layout_toRightOf="@id/termsandconditionView"
+                    android:text=" of MyDukan."
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/signUpBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="#4285F4"
+            android:padding="3dp"
+            android:text="@string/signUp"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

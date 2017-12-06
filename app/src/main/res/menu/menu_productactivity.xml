@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    xmlns:myDukan="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@drawable/ic_action_search"
+        android:title="Search"
+        android:visible="false"
+        myDukan:actionViewClass="android.support.v7.widget.SearchView"
+        myDukan:showAsAction="collapseActionView|ifRoom" />
+    <item
+        android:id="@+id/menu_cart"
+        android:icon="@drawable/ic_cart_badge"
+        android:title="Cart"
+        android:visible="false"
+        myDukan:showAsAction="collapseActionView|ifRoom" />
+    <item
+        android:id="@+id/product_notification"
+        android:icon="@drawable/ic_notification_badge"
+        android:title="Notification"
+        android:visible="true"
+        myDukan:showAsAction="collapseActionView|ifRoom" />
+</menu>

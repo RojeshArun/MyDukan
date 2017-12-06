@@ -1,0 +1,138 @@
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/src/main/res/layout/activity_categorylist.xml:118:44-64: AAPT: No resource found that matches the given name (at 'textColor' with value '@color/bodyTextColor').
+    
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/src/main/res/layout/activity_categorylist.xml:141:44-64: AAPT: No resource found that matches the given name (at 'textColor' with value '@color/bodyTextColor').
+    
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/src/main/res/layout/activity_categorylist.xml:155:44-64: AAPT: No resource found that matches the given name (at 'textColor' with value '@color/bodyTextColor').
+    
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/src/main/res/layout/activity_categorylist.xml:280:44-64: AAPT: No resource found that matches the given name (at 'textColor' with value '@color/bodyTextColor').
+    
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/src/main/res/layout/activity_image_text_list_base_adapter.xml:32:27-47: AAPT: No resource found that matches the given name (at 'textColor' with value '@color/bodyTextColor').
+    
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/src/main/res/layout/activity_my_account.xml:16:29-47: AAPT: No resource found that matches the given name (at 'background' with value '@color/buttonColor').
+    
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/src/main/res/layout/activity_my_account.xml:83:48-73: AAPT: No resource found that matches the given name (at 'textColor' with value '@color/buttonColorPressed').
+    
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/src/main/res/layout/activity_my_account.xml:162:44-69: AAPT: No resource found that matches the given name (at 'textColor' with value '@color/buttonColorPressed').
+    
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/src/main/res/layout/activity_my_networks.xml:133:29-54: AAPT: No resource found that matches the given name (at 'backgroundTint' with value '@color/buttonColorPressed').
+    
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/src/main/res/layout/activity_my_profile.xml:14:29-47: AAPT: No resource found that matches the given name (at 'background' with value '@color/buttonColor').
+    
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/src/main/res/layout/activity_notification_description.xml:13:29-47: AAPT: No resource found that matches the given name (at 'background' with value '@color/buttonColor').
+    
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/src/main/res/layout/activity_notification_description.xml:33:32-54: AAPT: No resource found that matches the given name (at 'textColor' with value '@color/buttonTextColor').
+    
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/src/main/res/layout/activity_search_mynetwork.xml:16:29-47: AAPT: No resource found that matches the given name (at 'background' with value '@color/buttonColor').
+    
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/src/main/res/layout/company_info_card.xml:361:40-58: AAPT: No resource found that matches the given name (at 'textColor' with value '@color/buttonColor').
+    
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/src/main/res/layout/item_scenter.xml:47:40-59: AAPT: No resource found that matches the given name (at 'textColor' with value '@color/headingColor').
+    
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/src/main/res/layout/item_scenter.xml:83:40-59: AAPT: No resource found that matches the given name (at 'textColor' with value '@color/headingColor').
+    
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/src/main/res/layout/item_scenter.xml:94:40-60: AAPT: No resource found that matches the given name (at 'textColor' with value '@color/bodyTextColor').
+    
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/src/main/res/layout/item_scenter.xml:116:40-59: AAPT: No resource found that matches the given name (at 'textColor' with value '@color/headingColor').
+    
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/src/main/res/layout/item_scenter.xml:127:40-60: AAPT: No resource found that matches the given name (at 'textColor' with value '@color/bodyTextColor').
+    
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/src/main/res/layout/item_scenter.xml:150:40-59: AAPT: No resource found that matches the given name (at 'textColor' with value '@color/headingColor').
+    
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/src/main/res/layout/item_scenter.xml:161:40-60: AAPT: No resource found that matches the given name (at 'textColor' with value '@color/bodyTextColor').
+    
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/src/main/res/layout/item_scenter.xml:184:40-59: AAPT: No resource found that matches the given name (at 'textColor' with value '@color/headingColor').
+    
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/src/main/res/layout/item_scenter.xml:194:40-60: AAPT: No resource found that matches the given name (at 'textColor' with value '@color/bodyTextColor').
+    
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/src/main/res/layout/item_scenter.xml:217:40-59: AAPT: No resource found that matches the given name (at 'textColor' with value '@color/headingColor').
+    
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/src/main/res/layout/item_scenter.xml:227:40-60: AAPT: No resource found that matches the given name (at 'textColor' with value '@color/bodyTextColor').
+    
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/src/main/res/layout/item_subscribe.xml:51:44-64: AAPT: No resource found that matches the given name (at 'textColor' with value '@color/bodyTextColor').
+    
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/src/main/res/layout/item_subscribe.xml:65:36-56: AAPT: No resource found that matches the given name (at 'textColor' with value '@color/bodyTextColor').
+    
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/src/main/res/layout/item_subscribe.xml:129:36-56: AAPT: No resource found that matches the given name (at 'textColor' with value '@color/bodyTextColor').
+    
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/src/main/res/layout/notification_listitem.xml:17:28-46: AAPT: No resource found that matches the given name (at 'textColor' with value '@color/buttonColor').
+    
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/src/main/res/layout/order_item.xml:73:36-54: AAPT: No resource found that matches the given name (at 'textColor' with value '@color/buttonColor').
+    
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/src/main/res/layout/order_item.xml:131:36-54: AAPT: No resource found that matches the given name (at 'textColor' with value '@color/buttonColor').
+    
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/src/main/res/layout/order_item.xml:142:36-54: AAPT: No resource found that matches the given name (at 'textColor' with value '@color/buttonColor').
+    
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/build/intermediates/res/merged/debug/layout/activity_categorylist.xml:110: error: Error: No resource found that matches the given name (at 'textColor' with value '@color/bodyTextColor').
+
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/build/intermediates/res/merged/debug/layout/activity_categorylist.xml:131: error: Error: No resource found that matches the given name (at 'textColor' with value '@color/bodyTextColor').
+
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/build/intermediates/res/merged/debug/layout/activity_categorylist.xml:146: error: Error: No resource found that matches the given name (at 'textColor' with value '@color/bodyTextColor').
+
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/build/intermediates/res/merged/debug/layout/activity_categorylist.xml:273: error: Error: No resource found that matches the given name (at 'textColor' with value '@color/bodyTextColor').
+
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/build/intermediates/res/merged/debug/layout/activity_image_text_list_base_adapter.xml:26: error: Error: No resource found that matches the given name (at 'textColor' with value '@color/bodyTextColor').
+
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/build/intermediates/res/merged/debug/layout/activity_my_account.xml:9: error: Error: No resource found that matches the given name (at 'background' with value '@color/buttonColor').
+
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/build/intermediates/res/merged/debug/layout/activity_my_account.xml:74: error: Error: No resource found that matches the given name (at 'textColor' with value '@color/buttonColorPressed').
+
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/build/intermediates/res/merged/debug/layout/activity_my_account.xml:153: error: Error: No resource found that matches the given name (at 'textColor' with value '@color/buttonColorPressed').
+
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/build/intermediates/res/merged/debug/layout/activity_my_networks.xml:125: error: Error: No resource found that matches the given name (at 'backgroundTint' with value '@color/buttonColorPressed').
+
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/build/intermediates/res/merged/debug/layout/activity_my_profile.xml:10: error: Error: No resource found that matches the given name (at 'background' with value '@color/buttonColor').
+
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/build/intermediates/res/merged/debug/layout/activity_notification_description.xml:9: error: Error: No resource found that matches the given name (at 'background' with value '@color/buttonColor').
+
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/build/intermediates/res/merged/debug/layout/activity_notification_description.xml:27: error: Error: No resource found that matches the given name (at 'textColor' with value '@color/buttonTextColor').
+
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/build/intermediates/res/merged/debug/layout/activity_search_mynetwork.xml:9: error: Error: No resource found that matches the given name (at 'background' with value '@color/buttonColor').
+
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/build/intermediates/res/merged/debug/layout/company_info_card.xml:350: error: Error: No resource found that matches the given name (at 'textColor' with value '@color/buttonColor').
+
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/build/intermediates/res/merged/debug/layout/item_scenter.xml:38: error: Error: No resource found that matches the given name (at 'textColor' with value '@color/headingColor').
+
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/build/intermediates/res/merged/debug/layout/item_scenter.xml:74: error: Error: No resource found that matches the given name (at 'textColor' with value '@color/headingColor').
+
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/build/intermediates/res/merged/debug/layout/item_scenter.xml:87: error: Error: No resource found that matches the given name (at 'textColor' with value '@color/bodyTextColor').
+
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/build/intermediates/res/merged/debug/layout/item_scenter.xml:107: error: Error: No resource found that matches the given name (at 'textColor' with value '@color/headingColor').
+
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/build/intermediates/res/merged/debug/layout/item_scenter.xml:120: error: Error: No resource found that matches the given name (at 'textColor' with value '@color/bodyTextColor').
+
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/build/intermediates/res/merged/debug/layout/item_scenter.xml:141: error: Error: No resource found that matches the given name (at 'textColor' with value '@color/headingColor').
+
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/build/intermediates/res/merged/debug/layout/item_scenter.xml:155: error: Error: No resource found that matches the given name (at 'textColor' with value '@color/bodyTextColor').
+
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/build/intermediates/res/merged/debug/layout/item_scenter.xml:175: error: Error: No resource found that matches the given name (at 'textColor' with value '@color/headingColor').
+
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/build/intermediates/res/merged/debug/layout/item_scenter.xml:188: error: Error: No resource found that matches the given name (at 'textColor' with value '@color/bodyTextColor').
+
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/build/intermediates/res/merged/debug/layout/item_scenter.xml:208: error: Error: No resource found that matches the given name (at 'textColor' with value '@color/headingColor').
+
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/build/intermediates/res/merged/debug/layout/item_scenter.xml:221: error: Error: No resource found that matches the given name (at 'textColor' with value '@color/bodyTextColor').
+
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/build/intermediates/res/merged/debug/layout/item_subscribe.xml:43: error: Error: No resource found that matches the given name (at 'textColor' with value '@color/bodyTextColor').
+
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/build/intermediates/res/merged/debug/layout/item_subscribe.xml:57: error: Error: No resource found that matches the given name (at 'textColor' with value '@color/bodyTextColor').
+
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/build/intermediates/res/merged/debug/layout/item_subscribe.xml:121: error: Error: No resource found that matches the given name (at 'textColor' with value '@color/bodyTextColor').
+
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/build/intermediates/res/merged/debug/layout/notification_listitem.xml:13: error: Error: No resource found that matches the given name (at 'textColor' with value '@color/buttonColor').
+
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/build/intermediates/res/merged/debug/layout/order_item.xml:66: error: Error: No resource found that matches the given name (at 'textColor' with value '@color/buttonColor').
+
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/build/intermediates/res/merged/debug/layout/order_item.xml:124: error: Error: No resource found that matches the given name (at 'textColor' with value '@color/buttonColor').
+
+/Users/vaibhavkumar/Downloads/mydukan-firebase-v2/app/build/intermediates/res/merged/debug/layout/order_item.xml:135: error: Error: No resource found that matches the given name (at 'textColor' with value '@color/buttonColor').
+
+
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:processDebugResources'.
+> com.android.ide.common.process.ProcessException: Failed to execute aapt
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.

@@ -1,0 +1,285 @@
+<resources>
+    <string name="app_name">MyDukan</string>
+    <string name="app_version">Version: %s</string>
+
+    <!--Navigation text-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- Strings related to EditText hints -->
+    <string name="hint_number">Phone Number</string>
+    <string name="hint_official_emailid">Official Email id</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_company_name">OUTLET / COMPANY NAME</string>
+    <string name="hint_vattin_number">GST NUMBER</string>
+    <string name="hint_street">Street</string>
+    <string name="hint_city">City</string>
+    <string name="hint_state">State</string>
+    <string name="hint_pincode">Pincode</string>
+    <string name="hint_imei">IMEI</string>
+    <string name="hint_invitecode">Enter Invite Code</string>
+    <string name="hint_subject">Enter subject here ... </string>
+    <string name="hint_complainthelp">Add complaint text below \nText size should be less than 280 words</string>
+    <string name="hint_complaint">Click here to start entering complaint ...</string>
+    <string name="hint_earnings">Earnings</string>
+    <string name="hint_date">Date</string>
+    <string name="hint_settledby">Settled By</string>
+    <string name="hint_voucherno">Voucher No</string>
+
+
+    <!-- Strings related to EditText errors -->
+    <string name="error_field_required">This field is required</string>
+    <string name="error_invalid_vatno">Invalid Vat number, must be greater than 8 digit.</string>
+    <string name="error_verify_number">You must Verify your Phone number</string>
+    <string name="error_subject_required">Subject should not be empty</string>
+    <string name="error_message_required">Message should not be empty</string>
+    <string name="error_state_required">Please select your state</string>
+    <string name="error_profession_required">Please choose your profession</string>
+    <string name="error_industry_required">Please select Industry</string>
+    <string name="error_state_category">Please select your category</string>
+    <string name="error_state_productname">Please select your model</string>
+    <string name="error_dateday">Enter a valid day as dd between 01 and 31</string>
+    <string name="error_datemonth">Enter a valid month as mm between 01 and 12</string>
+
+    <!-- Strings related to TextView subtitles -->
+    <string name="supplier">Supplier:</string>
+    <string name="subject">Subject:</string>
+    <string name="personaldetails">Personal Details</string>
+    <string name="companydetails">Company Details</string>
+    <string name="yourprofession">Your Profession</string>
+    <string name="businesscard">Business Card / Shop Frontage Photo</string>
+    <string name="productlist">Product List</string>
+    <string name="industy">Industry</string>
+    <string name="quantity">Quantity</string>
+
+
+    <!-- Strings related to Button text -->
+    <string name="submit">Submit</string>
+    <string name="yes">YES</string>
+    <string name="gotomyrecords">Go To My Records</string>
+    <string name="no">NO</string>
+    <string name="ok">OK</string>
+    <string name="cancel">CANCEL</string>
+    <string name="add">ADD</string>
+    <string name="register_imei">Enter IMEI</string>
+    <string name="edit">EDIT</string>
+    <string name="change">Change</string>
+    <string name="upload">Upload</string>
+
+    <string name="open">OPEN</string>
+    <string name="fetchaddress">Fetch Address</string>
+    <string name="verified">Verified</string>
+    <string name="verify">Verify</string>
+    <string name="dgts__login_digits_text">Verify</string>
+    <string name="delete">Delete</string>
+    <string name="update">Update</string>
+    <string name="details">Details</string>
+
+    <!-- Strings related to Alert title text -->
+    <string name="info">Info</string>
+    <string name="imei_title">Add IMEI:</string>
+    <string name="invitecode_title">Add Supplier Invite Code:</string>
+    <string name="quantity_title">Add Quantity:</string>
+
+    <string name="error_newproducts">There is no New Arrival Product</string>
+    <string name="error_pricedrop">There is no Price Drop Product</string>
+    <string name="error_quantity">Please select the proper quantity for the product.</string>
+
+    <string name="confirm_orderdelete">Are you sure you want to delete the product?</string>
+    <string name="confirm_pincode">Please confirm your pin code as</string>
+
+    <!-- Strings related to server errors -->
+    <string name="error_network">Please check your internet connection and try again</string>
+    <string name="status_success">Success</string>
+    <string name="status_failed">Failed</string>
+    <string name="error_addsupplierfailed">Supplier couldn\'t be added. Please try again</string>
+    <string name="error_updatefailed">Details couldn\'t be updated. Please try again</string>
+    <string name="error_deletefailed">Details couldn\'t be deleted. Please try again</string>
+    <string name="error_loginfailed">Login failed. Please try again</string>
+    <string name="error_usertype">This email is already used for a supplier/admin login.Please select a different account to login as a retailer.</string>
+    <string name="error_stock">The Stock is not available. Please contact the supplier.</string>
+    <string name="error_claim">The product couldn\'t be claimed. Please try again</string>
+    <string name="error_schemerecord">The scheme record couldn\'t be claimed. Please try again</string>
+
+
+    <!--General strings-->
+    <string name="google_signin">Click here to Sign In</string>
+    <string name="logout_warning">Are you sure want to logout?</string>
+    <string name="Click_to_view_the_product">Click here to view the products</string>
+    <string name="Alert">Alert</string>
+    <string name="Unable_to_fetch_the_address_for_given_pincode">Unable to fetch the addressInfo for given pincode. Please check internet connection and try again</string>
+    <string name="Specifications_Not_Available">Specifications Not Available</string>
+    <string name="Specifications_Not_Available1">Not Available</string>
+    <string name="my_supplier_empty_text">No Suppliers in your list please add some suppliers to view their products</string>
+    <string name="add_supplier_empty_text">Click on + if you have a INVITE CODE of the supplier.</string>
+    <string name="supplier_invite_success">Your request has been sent. Please check the supplier list.</string>
+    <string name="cartempty">"Your Cart is Empty"</string>
+    <string name="Please_wait">Please wait</string>
+    <string name="Page_is_loading">Page is loading..</string>
+    <string name="Authentication_successful_for">Authentication successful for</string>
+    <string name="You_Must_Verify_Your_Mobile_Number_to_Continue">You Must Verify Your Mobile Number to Continue</string>
+    <string name="You_Must_Verify_Your_Pincode_to_Continue">You Must Verify Your Pin Code to Continue</string>
+    <string name="androidversion">android version</string>
+    <string name="ram">RAM/ROM</string>
+    <string name="size">size</string>
+    <string name="camera">camera</string>
+
+
+    <!-- Strings related to screen titles -->
+    <string name="signin_title">Sign In</string>
+    <string name="help_title">Help</string>
+    <string name="schemes_title">Schemes</string>
+    <string name="myschemes_title">My Schemes</string>
+    <string name="schemesdetails_title">Scheme Info</string>
+    <string name="schemesrecord_title">Scheme Records</string>
+    <string name="notificationdetails_title">Notification Info</string>
+    <string name="complaints_title">Complaints</string>
+    <string name="category_title">Category</string>
+    <string name="order_title">My Orders</string>
+    <string name="order_details">Order Details</string>
+    <string name="notifications_title">Notifications</string>
+    <string name="addcomplaint_title">Add Complaint</string>
+    <string name="my_profile">My Profile</string>
+    <string name="my_supplier">My Supplier</string>
+    <string name="add_supplier">Add Supplier</string>
+    <string name="place_order">Place Order</string>
+    <string name="Products">Products</string>
+    <string name="Productinfo">Product Info</string>
+    <string name="record_title">My Records</string>
+    <string name="recorddetails_title">Record Details</string>
+    <string name="doarecord_title">Doa Records</string>
+    <string name="no_data">No data</string>
+
+    <!--Labels-->
+    <string name="label_new_product">New</string>
+    <string name="label_price_drop">Price Drop</string>
+    <string name="label_offer">Offers</string>
+
+    <string name="help_info">myDukan is a mobile app for RETAILERS/DISTRIBUTORS/COMPANY PERSONNEL that runs on both Android phones and tablets with an approval process. Through this app, one can select specific industries and view information pertaining to their industry.\n</string>
+    <string name="help_number">+919036770772</string>
+    <string name="help_emailid">contactmydukan@gmail.com</string>
+
+    <string name="share_msg_text">Download myDukan from Google Play Store @ </string>
+    <string name="share_msg_subject">myDukan - Android app</string>
+    <string name="send_button_label">Send</string>
+    <!--
+    <string name="banner_ad_unit_id_one">ca-app-pub-1640690939729824/3964207396</string>
+    <string name="banner_ad_unit_id_two">ca-app-pub-1640690939729824/5440940599</string>
+    <string name="banner_ad_unit_id_three">ca-app-pub-1640690939729824/3824606597</string>
+-->
+
+    // add mob integration
+    <string name="banner_myNetwork_ad_unit_id">ca-app-pub-1640690939729824/2174590993</string>
+    <string name="banner_ad_unit_id">ca-app-pub-1640690939729824/2174590993</string>
+    <string name="banner_ad_unit_id_cla">ca-app-pub-1640690939729824/3964207396</string>
+    <string name="banner_ad_unit_id_nla">ca-app-pub-1640690939729824/3824606597</string>
+    <string name="banner_ad_unit_id_pfa">ca-app-pub-1640690939729824/5440940599</string>
+    <string name="banner_ad_unit_id_ndla">ca-app-pub-1640690939729824/2806052595</string>
+    <string name="banner_ad_unit_id_pdfa">ca-app-pub-1640690939729824/9566634197</string>
+
+    <string name="set_your_location">Add your location on Map</string>
+    // add mob integration
+    <!-- GenerateQR Code Page String Values  -->
+    <string name="save_image_btn">SAVE AS IMAGE</string>
+    <string name="next_btn">NEXT</string>
+    <string name="edit_profile_btn">EDIT PROFILE</string>
+
+    //Paytm Gate way Integration.
+    <string name="paytm_aleart_message">Please Pay Rs.50/-by Paytm for monthly subscription. Ignore if already paid </string>
+    //Paytm Gate way Integration.
+    <string name="subscription_aleart_message">BE A PRIME MEMBER OF MYDUKAN. </string>
+    <string name="subscription_aleart_SUBmessage">Only for Retailers/Distributors/Handset Company Personnel. </string>
+
+    <string name="subscription_note_message">(Note: LogIn with your Paytm Phone number or NetBanking to Subscribe Rs 509 for 1 Year, Rs 306 for 6 Months, Rs 51 for One Month) </string>
+    <string name="subscription_aleart_message2">MyDukan Membership is Rs. 51/- valid for 30 days.  </string>
+    <string name="subscription_keyfeatures">1. DP/Detailed Specifications of Handset Models of \n  Leading Brands.\n2. PRICE DROP Alerts.\n3. NEW LAUNCH Alerts.\n4. IN APP Notifications with images and videos. \n5. Records for storing  IMEIs . \n6. Records of  Enrolled  Schemes. \n7.Google Cloud Messaging Notifications.\n8.Service Centre list of Leading Handset Brands.</string>
+    <string name="title_activity_deeplink">DeeplinkActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+
+    <!-- SHOWCASE COLOR STRING VALUES -->
+    <string name="content_text_color">#400000</string>
+    <string name="dismiss_text_color">#ffc929</string>
+    <string name="mask_color">#dc000060</string>
+
+    <!--YOUTUBE PLAYER STRING VALUES -->
+    <string name="player_error">Error initializing YouTube player: %s</string>
+    <string name="seek_to">Jump To</string>
+    <string name="seek_to_hint">Seconds</string>
+
+
+    <!-- DEEP LINKING STRING VALUES -->
+
+    <!--
+      Your app code, see:
+      https://firebase.google.com/docs/dynamic-links/android
+      https://wy4d6.app.goo.gl/
+    -->
+    <string name="app_code"> https://wy4d6.app.goo.gl/</string>
+    <string name="share">Share</string>
+    <string name="title_receive">Receive</string>
+    <string name="title_send">Send</string>
+    <string name="msg_no_deep_link">No deep link received.</string>
+    <string name="title_activity_json">JsonActivity</string>
+    <string name="title_activity_mob_num_verify">MobNumVerifyActivity</string>
+
+    <!-- MyNetwork STRING VALUES -->
+
+    <string name="text">A flavorful and local favorite of Basilico Eats: try this all-star, easy-to-follow recipe for artichokes with roasted.</string>
+
+    <string name="facebook_app_id">1695663440732073</string>
+
+    <string name="text_2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s.</string>
+    <string name="title_activity_my_network">MyNetworkActivity</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="font_fontFamily_medium">sans-serif</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="image">Image thumbnail</string>
+    <!-- sTRING cONTENT for Search_Mynetwork page-->
+    <string name="SearchContents">You Can Follow MyDukan Users. The User Should be on the latest Version to Follow and be Followed. Create your Network and Post your Content.</string>
+
+
+    <string name="month_plan">₹ 51/- for One Month</string>
+    <string name="half_yearly_plan">₹ 306/- for Six Months</string>
+    <string name="yearly_plan">₹ 509/- for One Year</string>
+
+    <string-array name="websites_array">
+        <item>₹ 51/- for One Month</item>
+        <item>₹ 201/- for Six Months</item>
+        <item>₹ 365/- for One Year \n**(Limited Period Offer)</item>
+    </string-array>
+    <!--
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in porta purus. Proin bibendum mattis ante, vehicula semper nisl iaculis et. Aenean non blandit nulla. Nunc justo lacus, hendrerit in dapibus sit amet, laoreet non magna. Morbi consequat neque ac lectus dapibus, id eleifend elit semper. Aliquam pharetra velit tempor, porttitor elit ultrices, viverra lectus. Aenean at sapien risus.</string>
+-->
+    <string name="lorem_ipsum">""</string>
+
+    <string name="partnerKey">PUtjD97329f8858644c2dafaf6b19d3e0853c</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="email">Email Id</string>
+    <string name="passowrd">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="show_pwd">Show Password</string>
+    <string name="hide_pwd">Hide Password</string>
+    <string name="forgot">Forgot password?</string>
+    <string name="resend_quoto">Didn\'t recive a code?</string>
+    <string name="closebutton">Close Button for Activity</string>
+    <string name="newUser">Not a Member yet? Sign Up here.</string>
+    <string name="fullName">Full Name</string>
+    <string name="mobileNumber">Enter your Number</string>
+    <string name="location">Location</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="terms_conditions">By clicking SignUp you agree all the terms and conditions of MyDukan.</string>
+    <string name="signUp">SIGN UP</string>
+    <string name="already_user">Already have Account? Login here.</string>
+    <string name="registered_emailid">Please enter your Registered Email Id below:</string>
+    <string name="back">BACK</string>
+    <string name="title_activity_my_schemes_fragment">MySchemesFragment</string>
+    <string name="action_search">Add</string>
+
+</resources>
